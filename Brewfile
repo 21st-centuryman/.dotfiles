@@ -26,7 +26,7 @@ cask "bitwarden"
 cask "discord"                                                                                                                                                                                                     
 cask "docker"                                                                                                                                                                                                      
 cask "firefox"                                                                                                                                                                                                     
-cask "fliqlo"                                                                                                                                                                                                      
+#cask "fliqlo" # Not used                                                                                                                                                                                                    
 cask "hyper"                                                                                                                                                                                                       
 cask "libreoffice"                                                                                                                                                                                                 
 cask "libreoffice-language-pack"                                                                                                                                                                                   
