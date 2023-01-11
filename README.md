@@ -10,5 +10,4 @@ Still a work in progress.
 
 # Future additions
 Test the code in a macos VM
-Implement Java
-Make it ARM and x86 proof.
+Implement Java or not not sure if I like Java.
