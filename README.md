@@ -3,7 +3,7 @@
 ## Macoser
 ##### A easy script to help setup a MacOS system.
 
-[![Apple](https://img.shields.io/badge/Apple-000000.svg?style=for-the-badge&logoColor=white&logo=apple)](https://www.apple.com/)
+[![Apple](https://img.shields.io/badge/MacOS-000000.svg?style=for-the-badge&logoColor=white&logo=apple)](https://www.apple.com/)
 [![Bash](https://img.shields.io/badge/Bash-4EAA25.svg?style=for-the-badge&logoColor=white&logo=gnubash)](https://www.gnu.org/software/bash/)
 [![Homebrew](https://img.shields.io/badge/homebrew-white.svg?style=for-the-badge&logo=homebrew)](https://bash.sh)
 
