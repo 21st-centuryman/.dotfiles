@@ -5,7 +5,7 @@
 
 [![Apple](https://img.shields.io/badge/MacOS-000000.svg?style=for-the-badge&logoColor=white&logo=apple)](https://www.apple.com/)
 [![Bash](https://img.shields.io/badge/Bash-4EAA25.svg?style=for-the-badge&logoColor=white&logo=gnubash)](https://www.gnu.org/software/bash/)
-[![Homebrew](https://img.shields.io/badge/homebrew-white.svg?style=for-the-badge&logo=homebrew)](https://bash.sh)
+[![Homebrew](https://img.shields.io/badge/homebrew-white.svg?style=for-the-badge&logo=homebrew)](https://brew.sh)
 
 [Website]: https://www.calexanderberg.com/
 [Dotfiles]: https://github.com/21st-centuryman/.dotfiles
