@@ -16,4 +16,5 @@
 This is a collection of my configuration files, used on my Mac and Linux machines.
 
 ## ⇁  File structure
-TO be added, after refacturing of the files and structure.
+
+Each program I use has one folder coressponding to it. Note that no files nor folders are hidden. I will update my bootstrap script to account for this when installing my dot files.
