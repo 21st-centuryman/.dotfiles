@@ -1,35 +1,34 @@
 # A script to help me setup future Macs
 # Install the script on a usb and run it.
 
-echo -e "Hello and welcome to macoser\n"
-echo -e "In the begining we will need your sudo password, so please be ready to help us here in the begining.\n"
+echo -e "Hello. Time to get the best goddamn setup script on the planet.\n"
+echo -e "Lets start with homebrew. The better package manager (f nix)\n"
 
-echo -e "One moment please\n"
-
-echo -e "Installing homebrew\n"
-
-
-# Install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-echo -e "homebrew installed. Now it is time for downloading git. This will be used to download our .dotfiles.\n"
+echo -e "homebrew installed... Downloading git to fetch Dotfiles.\n"
+
 brew install git
 
-echo -e "Git installation complete now it is time for our .dotfiles\n"
+echo -e "Git installation complete.\n"
 
-git clone https://github.com/calexanderberg/.dotfiles.git
+git clone https://github.com/21st-centuryman/dotfiles.git
 
+echo -e "We will copy all these dot files to the .config directory for better management\n"
 
-echo -e "Giving us privledges and running the bootstrap.sh command\n"
-chmod +x ~/.dotfiles/bootstrap.sh
-bash ~/.dotfiles/bootstrap.sh
+# Do some command when im bothered
 
+echo -e "Sourcing all the directores that do not check the .config directories by default\n"
+echo -e "As of feb 2023, these files are git, tmux, and zsh\n"
 
-echo -e "Done with bootstrap command\n"
-echo -e "Now it is time to download brew casks and formulae"
-brew bundle --file=~/Brewfile
+ln -s ~/.config/zsh/zshrc ~/.zshrc
+ln -s ~/.config/git/gitconfig ~/.gitconfig
+ln -s ~/.config/tmux/tmux.conf ~/.tmux.conf
 
+echo -e "Donwloading all CLI and gui apps (if you are on mac)"
 
-echo -e "\n\nDone with the installation, we hope you enjoyed the process\n"
+brew bundle --file=~/.config/homebrew/Brewfile
+
+echo -e "\n\nDone with the installation. Enjoy your kickass dotfiles\n"
 echo -e "Goodbye\n"
 exit 1
