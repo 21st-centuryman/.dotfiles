@@ -16,11 +16,35 @@
 This is a collection of my configuration files, used on my Mac and Linux machines.
 
 ## ⇁  File structure
-Each program I use has one folder coressponding to it. Note that no files nor folders are hidden. I will update my bootstrap script to account for this when installing my dot files.
+
+```
+├── README.md
+├── alacritty
+│   └── alacritty.yml
+├── git
+│   └── gitconfig
+├── homebrew
+│   └── Brewfile
+├── nvim
+│   ├── after
+│   │   └── plugin
+│   ├── init.lua
+│   ├── lua
+│   │   └── cab
+│   └── plugin
+│       └── packer_compiled.lua
+├── startup.sh
+├── tmux
+│   ├── tmux.conf
+│   └── plugins
+│       └── tpm
+└── zsh
+    └── zshrc
+```
 
 ## ⇁ FAQ
 Why not sure nix? 
-- Bruh
+\- Bruh
 
 ## ⇁ Note
 DO NOT use my bootstrap script. It is in dire need of updating.
