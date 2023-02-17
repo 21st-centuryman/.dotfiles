@@ -16,8 +16,8 @@
 This is a collection of my configuration files, used on my Mac and Linux machines.
 
 ## ⇁  File structure
-`
-.
+
+```
 ├── README.md
 ├── alacritty
 │   └── alacritty.yml
@@ -39,7 +39,7 @@ This is a collection of my configuration files, used on my Mac and Linux machine
 │       └── tpm
 └── zsh
     └── zshrc
-`
+```
 
 ## ⇁ FAQ
 Why not sure nix? 
