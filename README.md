@@ -40,6 +40,7 @@ This is a collection of my configuration files, used on my Mac and Linux machine
 │       └── tpm
 └── zsh
     └── zshrc
+
 ```
 
 ## ⇁ FAQ
