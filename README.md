@@ -48,4 +48,4 @@ Why not sure nix?
 \- Bruh
 
 ## ⇁ Note
-DO NOT use my bootstrap script. It is in dire need of updating.
+DO NOT use my bootstrap script. I am currently in the process to merge my [macoser](https://github.com/21st-centuryman/macoser) repo to this one. 
