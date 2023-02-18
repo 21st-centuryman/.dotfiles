@@ -1,0 +1,7 @@
+
+# A list of hidden files for stow to ignore
+
+# Ignore the git repo files
+\.git
+\.gitignore
+
