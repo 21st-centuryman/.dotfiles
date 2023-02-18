@@ -19,7 +19,7 @@
 </div>
 
 ## ⇁  Welcome
-THIS IS BROKEN. It git clones from the wrong github address, this will be fixed. When is uncertain.
+THIS IS BROKEN or at least the repo is in the process of being merged with my [dotfiles](https://github.com/21st-centuryman/dotfiles), having these repos be seperted is redicukus
 
 Obviously personal as I will download systems you might not even use.
 Realized however that my friends might be inspired to write a similar script for their future mac.
