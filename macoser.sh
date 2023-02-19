@@ -41,6 +41,7 @@ run_installer () {
 
   echo -e \n\n"Before you leave, read the above commands. If you have no executed these please run them then run this installer again."
   echo -e "Goodbye"
+  exit 1
 }
 
 echo -e "Hello. Time to get the best goddamn setup script on the planet.\n"
