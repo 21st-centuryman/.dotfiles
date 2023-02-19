@@ -16,21 +16,23 @@ while true; do
 done
 
 function run_script {
-  echo -e "Lets start with homebrew. The better package manager (f nix)\n"
+brew install git stow
 
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+git clone https://github.com/21st-centuryman/dotfiles.git 
 
-  echo -e "homebrew installed... Downloading git to fetch Dotfiles.\n"
+echo -e "Stowing the files"
 
-  brew install git
+cd dotfiles
+stow -t ~/.config/. /*
 
-  echo -e "Git installation complete.\n"
+echo -e "Sourcing all the directores that do not check the .config directories by default\n"
+echo -e "As of feb 2023, these files are git, tmux, and zsh. We will source them using gnu stow\n"
 
-  git clone https://github.com/21st-centuryman/dotfiles.git
+stow -t ~/. -d ~/.config/git/.gitconfig
+stow -t ~/. -d ~/.config/tmux/.tmux.conf
+stow -t ~/. -d ~/.config/zsh/.zshrc
 
-  echo -e "We will copy all these dot files to the .config directory for better management\n"
-
-  # Do some command when im bothered
+echo -e "Downloading all CLI and gui apps (if you are on mac)"
 
   echo -e "Sourcing all the directores that do not check the .config directories by default\n"
   echo -e "As of feb 2023, these files are git, tmux, and zsh\n"
