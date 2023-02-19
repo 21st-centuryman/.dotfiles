@@ -36,7 +36,7 @@ With this in mind I came to the following conclusions for what I should use:
     * Add on: **Tmux** ( *To minimize the differences between a headless system and add functionality to alacritty* )
 * Shell: **ZSH** ( *Just overall awesome, also I will manually download packages as I see fit* )
 * IDE: **Neovim** ( *Easy config, easy built in package manager, great language support, and fast typing, once I learn how to type* )
-* * Management: **Gnu stow** ( *Easy way to link files to official repo. I.e. changes in .config folder = changes in this repo* )
+* Management: **Gnu stow** ( *Easy way to link files to official repo. I.e. changes in .config folder = changes in this repo* )
 * Web Browser: (I have not found a satisfactory web browser for this, and I doubt I will)
     
 Plus I also have other configuration files, like my gitconfig. More will definetly appear here as I continue my exploration.
