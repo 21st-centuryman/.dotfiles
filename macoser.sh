@@ -15,7 +15,7 @@ while true; do
   esac
 done
 
-function run_script () {
+run_script () {
   brew install git stow
 
   git clone https://github.com/21st-centuryman/dotfiles.git 
@@ -50,7 +50,7 @@ function run_script () {
   exit 1
 }
 
-function run_installer () {
+run_installer () {
 
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
