@@ -1,20 +1,5 @@
 # A script to help me setup future unix machines
 
-echo -e "Hello. Time to get the best goddamn setup script on the planet.\n"
-
-
-read -p "Do you have homebrew installed, saying n will prompt you to install it? [Y/n]" yn
-while true; do
-  case $yn in
-    [Yy]*) run_script
-    ;;
-    [Nn]*) run_installer
-    ;;
-    *) read -p "invalid response. Do you have homebrew installed? [Y/n]" yn
-    ;;
-  esac
-done
-
 run_script () {
   brew install git stow
 
@@ -57,3 +42,19 @@ run_installer () {
   echo -e \n\n"Before you leave, read the above commands. If you have no executed these please run them then run this installer again."
   echo -e "Goodbye"
 }
+
+echo -e "Hello. Time to get the best goddamn setup script on the planet.\n"
+
+
+read -p "Do you have homebrew installed, saying n will prompt you to install it? [Y/n]" yn
+while true; do
+  case $yn in
+    [Yy]*) run_script
+    ;;
+    [Nn]*) run_installer
+    ;;
+    *) read -p "invalid response. Do you have homebrew installed? [Y/n]" yn
+    ;;
+  esac
+done
+
