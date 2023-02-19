@@ -10,29 +10,29 @@ while true; do
     ;;
     [Nn]*) run_installer
     ;;
-    *) read -p "invalid response. Do you have homebrew installed? [Y/n]" $yn
+    *) read -p "invalid response. Do you have homebrew installed? [Y/n]" yn
     ;;
   esac
 done
 
-function run_script {
-brew install git stow
+function run_script () {
+  brew install git stow
 
-git clone https://github.com/21st-centuryman/dotfiles.git 
+  git clone https://github.com/21st-centuryman/dotfiles.git 
 
-echo -e "Stowing the files"
+  echo -e "Stowing the files"
 
-cd dotfiles
-stow -t ~/.config/. /*
+  cd dotfiles
+  stow -t ~/.config/. /*
 
-echo -e "Sourcing all the directores that do not check the .config directories by default\n"
-echo -e "As of feb 2023, these files are git, tmux, and zsh. We will source them using gnu stow\n"
+  echo -e "Sourcing all the directores that do not check the .config directories by default\n"
+  echo -e "As of feb 2023, these files are git, tmux, and zsh. We will source them using gnu stow\n"
 
-stow -t ~/. -d ~/.config/git/.gitconfig
-stow -t ~/. -d ~/.config/tmux/.tmux.conf
-stow -t ~/. -d ~/.config/zsh/.zshrc
+  stow -t ~/. -d ~/.config/git/.gitconfig
+  stow -t ~/. -d ~/.config/tmux/.tmux.conf
+  stow -t ~/. -d ~/.config/zsh/.zshrc
 
-echo -e "Downloading all CLI and gui apps (if you are on mac)"
+  echo -e "Downloading all CLI and gui apps (if you are on mac)"
 
   echo -e "Sourcing all the directores that do not check the .config directories by default\n"
   echo -e "As of feb 2023, these files are git, tmux, and zsh\n"
@@ -50,7 +50,7 @@ echo -e "Downloading all CLI and gui apps (if you are on mac)"
   exit 1
 }
 
- function run_installer {
+function run_installer () {
 
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
