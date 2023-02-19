@@ -1,34 +1,57 @@
-# A script to help me setup future Macs
-# Install the script on a usb and run it.
+# A script to help me setup future unix machines
 
 echo -e "Hello. Time to get the best goddamn setup script on the planet.\n"
-echo -e "Lets start with homebrew. The better package manager (f nix)\n"
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-echo -e "homebrew installed... Downloading git to fetch Dotfiles.\n"
+read -p "Do you have homebrew installed, saying n will prompt you to install it? [Y/n]" yn
+while true; do
+  case $yn in
+    [Yy]*) run_script
+    ;;
+    [Nn]*) run_installer
+    ;;
+    *) read -p "invalid response. Do you have homebrew installed? [Y/n]" $yn
+    ;;
+  esac
+done
 
-brew install git
+function run_script {
+  echo -e "Lets start with homebrew. The better package manager (f nix)\n"
 
-echo -e "Git installation complete.\n"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-git clone https://github.com/21st-centuryman/dotfiles.git
+  echo -e "homebrew installed... Downloading git to fetch Dotfiles.\n"
 
-echo -e "We will copy all these dot files to the .config directory for better management\n"
+  brew install git
 
-# Do some command when im bothered
+  echo -e "Git installation complete.\n"
 
-echo -e "Sourcing all the directores that do not check the .config directories by default\n"
-echo -e "As of feb 2023, these files are git, tmux, and zsh\n"
+  git clone https://github.com/21st-centuryman/dotfiles.git
 
-ln -s ~/.config/zsh/zshrc ~/.zshrc
-ln -s ~/.config/git/gitconfig ~/.gitconfig
-ln -s ~/.config/tmux/tmux.conf ~/.tmux.conf
+  echo -e "We will copy all these dot files to the .config directory for better management\n"
 
-echo -e "Donwloading all CLI and gui apps (if you are on mac)"
+  # Do some command when im bothered
 
-brew bundle --file=~/.config/homebrew/Brewfile
+  echo -e "Sourcing all the directores that do not check the .config directories by default\n"
+  echo -e "As of feb 2023, these files are git, tmux, and zsh\n"
 
-echo -e "\n\nDone with the installation. Enjoy your kickass dotfiles\n"
-echo -e "Goodbye\n"
-exit 1
+  ln -s ~/.config/zsh/zshrc ~/.zshrc
+  ln -s ~/.config/git/gitconfig ~/.gitconfig
+  ln -s ~/.config/tmux/tmux.conf ~/.tmux.conf
+
+  echo -e "Donwloading all CLI and gui apps (if you are on mac)"
+
+  brew bundle --file=~/.config/homebrew/Brewfile
+
+  echo -e "\n\nDone with the installation. Enjoy your kickass dotfiles\n"
+  echo -e "Goodbye\n"
+  exit 1
+}
+
+ function run_installer {
+
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+  echo -e \n\n"Before you leave, read the above commands. If you have no executed these please run them then run this installer again."
+  echo -e "Goodbye"
+}
