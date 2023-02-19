@@ -58,20 +58,17 @@ Note that I also want to find a better package manager, one that can install bot
 │   ├── **after**
 │   ├── init.lua
 │   ├── lazy-lock.json
-│   ├── **lua**
-│   ├── **nvim**
-│   ├── **plugin**
+│   ├── lua*
+│   ├── nvim*
+│   ├── plugin*
 │   └── stylua.toml
 ├── tmux
 │   ├── .tmux.conf
-│   └── **plugins**
+│   └── plugins*
 └── zsh
     └── .zshrc
 ```
-
-Legend:
-**bold**: Directory
-
+name* = directory 
 ## ⇁ FAQ
 Why not sure nix? 
 \- Bruh
