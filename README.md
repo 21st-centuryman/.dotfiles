@@ -26,7 +26,7 @@ When I want to set up my computer(s) and servers I want to have as similar of a 
 * A way to manage my Dotfiles
 (and other programs as they come and go)
 
-Therefore I have been exploring on my freetime what I can use to make this as similar as possible for my windows and unix based machines.
+Therefore I have been exploring on my freetime what I can use to make this as similar as possible for my windows (using WSL) and unix based machines.
 I also want my configuration and settings for these programs to be used as dotfiles so I don't have to manually set that up everytime I create a new server or get a new machine.
 
 ## ⇁ The solution
