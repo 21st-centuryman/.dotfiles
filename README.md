@@ -46,30 +46,31 @@ Note that I also want to find a better package manager, one that can install bot
 ## ⇁  File structure
 
 ```
+├── .stow-local-ignore
 ├── README.md
 ├── alacritty
 │   └── alacritty.yml
 ├── git
-│   └── gitconfig
+│   └── .gitconfig
 ├── homebrew
 │   └── Brewfile
 ├── nvim
-│   ├── after
-│   │   └── plugin
+│   ├── **after**
 │   ├── init.lua
-│   ├── lua
-│   │   └── cab
-│   └── plugin
-│       └── packer_compiled.lua
-├── startup.sh
+│   ├── lazy-lock.json
+│   ├── **lua**
+│   ├── **nvim**
+│   ├── **plugin**
+│   └── stylua.toml
 ├── tmux
-│   ├── tmux.conf
-│   └── plugins
-│       └── tpm
+│   ├── .tmux.conf
+│   └── **plugins**
 └── zsh
-    └── zshrc
-
+    └── .zshrc
 ```
+
+Legend:
+**bold**: Directory
 
 ## ⇁ FAQ
 Why not sure nix? 
