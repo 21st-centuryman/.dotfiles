@@ -17,11 +17,11 @@ This is a collection of my configuration files, used on my Mac and Linux machine
 
 ## ⇁ Problem
 When I want to set up my computer(s) and servers I want to have as similar of a workflow as possible. This include but is not limited to:
-A Package manager
-A terminal
-A Shell
-An IDE
-A web browser
+* A Package manager
+* A terminal
+* A Shell
+* An IDE
+* A web browser
 (and other programs as they come and go)
 
 Therefore I have been exploring on my freetime what I can use to make this as similar as possible for my windows and unix based machines.
@@ -29,12 +29,12 @@ I also want my configuration and settings for these programs to be used as dotfi
 
 ## ⇁ The solution
 With this in mind I came to the following conclusions for what I should use:
-- Package Manager: **Homebrew** ( *Easy cross configuration for both MacOS and Linux* )
-- Terminal: **Alacritty** ( *Settings are easily configured with a yml file & lack of features* )
-    - Add on: **Tmux** ( *To minimize the differences between a headless system and add functionality to alacritty* )
-- Shell: **ZSH** ( *Just overall awesome, also I will manually download packages as I see fit* )
-- IDE: **Neovim** ( *Easy config, easy built in package manager, great language support, and fast typing, once I learn how to type* )
-- Web Browser: (I have not found a satisfactory web browser for this, and I doubt I will)
+* Package Manager: **Homebrew** ( *Easy cross configuration for both MacOS and Linux* )
+* Terminal: **Alacritty** ( *Settings are easily configured with a yml file & lack of features* )
+    * Add on: **Tmux** ( *To minimize the differences between a headless system and add functionality to alacritty* )
+* Shell: **ZSH** ( *Just overall awesome, also I will manually download packages as I see fit* )
+* IDE: **Neovim** ( *Easy config, easy built in package manager, great language support, and fast typing, once I learn how to type* )
+* Web Browser: (I have not found a satisfactory web browser for this, and I doubt I will)
     
 Plus I also have other configuration files, like my gitconfig. More will definetly appear here as I continue my exploration.
 
