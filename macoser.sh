@@ -8,20 +8,12 @@ run_script () {
   echo -e "Stowing the files"
 
   cd dotfiles
-  stow -t ~/.config/. *
+  stow -t ~/.config/. .
 
   echo -e "Sourcing all the directores that do not check the .config directories by default\n"
-  echo -e "As of feb 2023, these files are git, tmux, and zsh. We will source them using gnu stow\n"
+  echo -e "As of feb 2023, these files are git, tmux, and zsh.\n"
 
   rm ~/.gitconfig ~/.zshrc ~/.tmux.conf
-  stow -t ~/. -d ~/.config/git/.gitconfig
-  stow -t ~/. -d ~/.config/tmux/.tmux.conf
-  stow -t ~/. -d ~/.config/zsh/.zshrc
-
-  echo -e "Downloading all CLI and gui apps (if you are on mac)"
-
-  echo -e "Sourcing all the directores that do not check the .config directories by default\n"
-  echo -e "As of feb 2023, these files are git, tmux, and zsh\n"
 
   ln -s ~/.config/zsh/zshrc ~/.zshrc
   ln -s ~/.config/git/gitconfig ~/.gitconfig
