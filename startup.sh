@@ -1,13 +1,8 @@
 # A script to help me setup future unix machines
 
 run_script () {
-  brew install git stow
-
-  git clone https://github.com/21st-centuryman/dotfiles.git 
-
+  brew install stow
   echo -e "Stowing the files"
-
-  cd dotfiles
   stow -t ~/.config/. .
 
   echo -e "Sourcing all the directores that do not check the .config directories by default\n"
