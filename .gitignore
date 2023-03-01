@@ -4,4 +4,4 @@ node_modules/
 # just in case
 .ssh/
 ssh
-tmux/plugins/tmux
+tmux/plugins/
