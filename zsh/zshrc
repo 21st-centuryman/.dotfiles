@@ -16,7 +16,7 @@ alias Documents="cd ~/Documents"
 # Aliases for applications
 alias brews='brew update; brew upgrade; brew autoremove; brew doctor'
 alias speed="speedtest-cli"
-alias ssh='ssh -F ~/.config/ssh/config'
+alias ssh='ssh -F ~/.config/.ssh/config'
 
 # Getting rusty
 alias grep='rg'
