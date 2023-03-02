@@ -73,5 +73,6 @@ name* = directory
 Why not sure nix? 
 \- Bruh
 
-## ⇁ Note
-DO NOT use my bootstrap script. I am currently in the process to merge my [macoser](https://github.com/21st-centuryman/macoser) repo to this one. 
+## ⇁ Improvements
+- Easy to install package manager for unix systems
+- Remove the dracula tmux extension for one with more freedom to customize
