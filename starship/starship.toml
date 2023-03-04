@@ -1,15 +1,10 @@
 format = """
-[](gf:white)\
 $os\
-[](bg:blue fg:white)\
 $directory\
-[](fg:blue bg:purple)\
 $git_branch\
 $git_status\
-[](fg:purple bg:white)\
 $c\
 $elixir\
-$elm\
 $golang\
 $haskell\
 $java\
@@ -17,95 +12,108 @@ $julia\
 $nodejs\
 $nim\
 $rust\
-[](fg:white)\
 $fill\
-[](fg:yellow)\
 $cmd_duration\
-[](fg:yellow)\
 $line_break\
 $character
 """
 
+palette = 'personal'
+
+[palettes.personal]
+os = '#FFFFFF'
+directory = '#1DA1F2'
+duration = 'yellow'
+git = '#F05032'
+languages = '#FFFFFF'
+c = '#A8B9CC'
+elixir = '#4B275F'
+golang = '#00ADD8'
+haskell = '#5D4F85'
+java = '#007396'
+julia = '#9558B2'
+nodejs = '#339933'
+rust = '#FFFFFF'
+
 [directory]
-style = "bg:#1DA1F2"
+style = "fg:directory"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
-[directory.substitutions]
-"Documents" = "  "
-"Downloads" = "  "
-"Music" = "  "
-"Pictures" = "  "
-
 [c]
-symbol = " "
-style = "bg:white"
-format = '[[ $symbol ($version) ](fg:#A8B9CC bg:white)]($style)'
+symbol = ""
+style = 'fg:c'
+text = 'fg:languages'
+format = '[ $symbol]($style)[ $version ]($text)'
 
 [cmd_duration]
 min_time = 1000
-format = '[[ $duration](fg:black bg:yellow)]($style)'
+style = 'fg:duration'
+format = '[[ $duration]($style)]($style)'
 
-[docker_context]
-symbol = " "
-style = "bg:#06969A"
-format = '[[ $symbol $context ](bg:#06969A)]($style) $path'
+#[docker_context]
+#symbol = " "
+#format = '[[ $symbol $context ](bg:#06969A)]($style) $path'
 
 [elixir]
-symbol = " "
-style = "bg:white"
-format = '[[ $symbol ($version) ](fg:#4B275F bg:white)]($style)'
+symbol = ""
+style = 'fg:elixir'
+text = 'fg:languages'
+format = '[ $symbol]($style)[ $version ]($text)'
 
 [fill]
 symbol='━'
 
 [git_branch]
 symbol = ""
-style = "bg:purple"
-format = '[[ $symbol $branch ](bg:purple)]($style)'
+style = 'fg:git'
+format = '[ $symbol $branch]($style)'
 
 [git_status]
-style = "bg:purple"
-format = '[[($all_status$ahead_behind )](bg:purple)]($style)'
+style = 'fg:git'
+format = '[ $all_status$ahead_behind ]($style)'
 
 [golang]
-symbol = " "
-style = "bg:white"
-format = '[[ $symbol ($version) ](fg:#00ADD8 bg:white)]($style)'
+symbol = ""
+style = 'golang'
+text = 'fg:languages'
+format = '[ $symbol]($style)[ $version ]($text)'
 
 [haskell]
 symbol = " "
-style = "bg:white"
-format = '[[ $symbol ($version) ](fg:#5D4F85 bg:white)]($style)'
+style = 'fg:haskell'
+text = 'fg:languages'
+format = '[ $symbol]($style)[ $version ]($text)'
 
 [java]
-symbol = " "
-style = "bg:white"
-format = '[[ $symbol ($version) ](fg:#007396 bg:white)]($style)'
+symbol = ""
+style = 'fg:java'
+text = 'fg:languages'
+format = '[ $symbol]($style)[ $version ]($text)'
 
 [julia]
-symbol = " "
-style = "bg:white"
-format = '[[ $symbol ($version) ](fg:#9558B2 bg:white)]($style)'
+symbol = ""
+style = 'fg:julia'
+text = 'fg:languages'
+format = '[ $symbol]($style)[ $version ]($text)'
 
 [nodejs]
 symbol = ""
-style = "bg:white"
-format = '[[ $symbol ($version) ](fg:#339933 bg:white)]($style)'
+style = 'fg:nodejs'
+text = 'fg:languages'
+format = '[ $symbol]($style)[ $version ]($text)'
 
 [os]
 disabled = false
-style = "fg:black bg:white"
-format = "[[ $symbol](fg:black bg:white)]($style)"
+style = 'fg:os'
+format = '[[$symbol]($style)]($style)'
 
 [rust]
 symbol = ""
-style = "bg:white"
-format = '[[ $symbol ($version) ](fg:#000000 bg:white)]($style)'
-
-# Setting my colors this will be done later
-[palettes.foo]
+style = 'fg:rust'
+text = 'fg:languages'
+format = '[ $symbol]($style)[ $version ]($text)'
 
 [os.symbols]
 Alpine = " "
