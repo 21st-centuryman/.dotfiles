@@ -44,8 +44,7 @@ truncation_symbol = "…/"
 [c]
 symbol = ""
 style = 'fg:c'
-text = 'fg:languages'
-format = '[ $symbol]($style)[ $version ]($text)'
+format = '[ $symbol]($style)[ $version ](fg:languages)'
 
 [cmd_duration]
 min_time = 1000
@@ -59,8 +58,7 @@ format = '[[ $duration]($style)]($style)'
 [elixir]
 symbol = ""
 style = 'fg:elixir'
-text = 'fg:languages'
-format = '[ $symbol]($style)[ $version ]($text)'
+format = '[ $symbol]($style)[ $version ](fg:languages)'
 
 [fill]
 symbol='━'
@@ -77,32 +75,27 @@ format = '[ $all_status$ahead_behind ]($style)'
 [golang]
 symbol = ""
 style = 'golang'
-text = 'fg:languages'
-format = '[ $symbol]($style)[ $version ]($text)'
+format = '[ $symbol]($style)[ $version ](fg:languages)'
 
 [haskell]
 symbol = " "
 style = 'fg:haskell'
-text = 'fg:languages'
-format = '[ $symbol]($style)[ $version ]($text)'
+format = '[ $symbol]($style)[ $version ](fg:languages)'
 
 [java]
 symbol = ""
 style = 'fg:java'
-text = 'fg:languages'
-format = '[ $symbol]($style)[ $version ]($text)'
+format = '[ $symbol]($style)[ $version ](fg:languages)'
 
 [julia]
 symbol = ""
 style = 'fg:julia'
-text = 'fg:languages'
-format = '[ $symbol]($style)[ $version ]($text)'
+format = '[ $symbol]($style)[ $version ](fg:languages)'
 
 [nodejs]
 symbol = ""
 style = 'fg:nodejs'
-text = 'fg:languages'
-format = '[ $symbol]($style)[ $version ]($text)'
+format = '[ $symbol]($style)[ $version ](fg:languages)'
 
 [os]
 disabled = false
@@ -112,8 +105,7 @@ format = '[[$symbol]($style)]($style)'
 [rust]
 symbol = ""
 style = 'fg:rust'
-text = 'fg:languages'
-format = '[ $symbol]($style)[ $version ]($text)'
+format = '[ $symbol]($style)[ $version ](fg:languages)'
 
 [os.symbols]
 Alpine = " "
