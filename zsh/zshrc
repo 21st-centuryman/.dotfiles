@@ -29,6 +29,7 @@ export VISUAL=nvim
 export CARGO_HOME=~/.config/cargo
 export RUSTUP_HOME=~/.config/rustup
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
+#export PATH=/usr/local/bin:$PATH                         #Uncomment if using linux
 
 # Set up starship
 eval "$(starship init zsh)"

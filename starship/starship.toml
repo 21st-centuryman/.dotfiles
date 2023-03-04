@@ -35,6 +35,9 @@ julia = '#9558B2'
 nodejs = '#339933'
 rust = '#FFFFFF'
 
+[character]
+format = ' $symbol '
+
 [directory]
 style = "fg:directory"
 format = "[ $path ]($style)"
@@ -100,7 +103,7 @@ format = '[ $symbol]($style)[ $version ](fg:languages)'
 [os]
 disabled = false
 style = 'fg:os'
-format = '[[$symbol]($style)]($style)'
+format = '[[ $symbol]($style)]($style)'
 
 [rust]
 symbol = ""
