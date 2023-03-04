@@ -7,6 +7,7 @@
 [![Git](https://img.shields.io/badge/git-F05032.svg?style=for-the-badge&logoColor=white&logo=git)](https://git-scm.com/)
 [![Homebrew](https://img.shields.io/badge/Homebrew-white.svg?style=for-the-badge&logoColor=FBB040&logo=homebrew)](https://brew.sh/)
 [![Neovim](https://img.shields.io/badge/Neovim-57A143.svg?style=for-the-badge&logoColor=white&logo=neovim)](https://neovim.io/)
+[![Starship](https://img.shields.io/badge/Starship-DD0B78.svg?style=for-the-badge&logoColor=white&logo=starship)](https://starship.rs/)
 [![Stow](https://img.shields.io/badge/GNU_Stow-white.svg?style=for-the-badge&logoColor=black&logo=gnu)](https://www.gnu.org/software/stow/)
 [![Tmux](https://img.shields.io/badge/tmux-1BB91F.svg?style=for-the-badge&logoColor=white&logo=tmux)](https://github.com/tmux/tmux)
 [![Zsh](https://img.shields.io/badge/Zsh-F15A24.svg?style=for-the-badge&logoColor=white&logo=gnubash)](https://www.zsh.org/)
@@ -33,6 +34,7 @@ I also want my configuration and settings for these programs to be used as dotfi
 With this in mind I came to the following conclusions for what I should use:
 * Package Manager: **Homebrew** ( *Easy cross configuration for both MacOS and Linux* )
 * Terminal: **Alacritty** ( *Settings are easily configured with a yml file & lack of features* )
+    * Add on: **Starship** ( *To have a cross-shell prompt to account if I ever change from zsh* )
     * Add on: **Tmux** ( *To minimize the differences between a headless system and add functionality to alacritty* )
 * Shell: **ZSH** ( *Just overall awesome, also I will manually download packages as I see fit* )
 * IDE: **Neovim** ( *Easy config, easy built in package manager, great language support, and fast typing, once I learn how to type* )
@@ -46,29 +48,32 @@ Note that I also want to find a better package manager, one that can install bot
 ## ⇁  File structure
 
 ```
-├── .stow-local-ignore
 ├── README.md
 ├── alacritty
 │   └── alacritty.yml
 ├── git
-│   └── .gitconfig
+│   └── gitconfig
 ├── homebrew
-│   └── Brewfile
+│   ├── Brewfile
+│   └── Brewfile.lock.json
 ├── nvim
-│   ├── after*
+│   ├── LICENSE
+│   ├── README.md
 │   ├── init.lua
 │   ├── lazy-lock.json
-│   ├── lua*
-│   ├── nvim*
-│   ├── plugin*
+│   ├── lua
 │   └── stylua.toml
+├── starship
+│   └── starship.toml
+├── startup.sh
 ├── tmux
-│   ├── .tmux.conf
-│   └── plugins*
+│   ├── plugins
+│   └── tmux.conf
 └── zsh
-    └── .zshrc
+    └── zshrc
 ```
 name* = directory 
+
 ## ⇁ FAQ
 Why not sure nix? 
 \- Bruh
