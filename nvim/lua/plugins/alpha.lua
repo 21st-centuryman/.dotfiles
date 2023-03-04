@@ -1,3 +1,35 @@
+-- To do make it generate qutes in the bottom of the startup
+local quotes = {
+  { "Sometimes it is the people no one can imagine anything of who do the things no one can imagine.", "Alan Turing" },
+  { "We can only see a short distance ahead, but we can see plenty there that needs to be done.", "Alan Turing" },
+  { "Those who can imagine anything, can create the impossible.", "Alan Turing" },
+  { "I have not failed. I've just found 10,000 ways that won't work.", "Thomas A. Edison" },
+  { "We often miss opportunity because it's dressed in overalls and looks like work.", "Thomas A. Edison" },
+  {
+    "Many of life's failures are people who did not realize how close they were to success when they gave up.",
+    "Thomas A. Edison",
+  },
+  {
+    "Science does not have a moral dimension. It is like a knife. If you give it to a surgeon or a murderer, each will use it differently.",
+    "Wernher Von Braum",
+  },
+  { "Never let your sense of morals prevent you from doing what is right.", "Isaac Asimov" },
+  { "Failure Is Not an Option", "Gene KRanz" },
+  {
+    "Object-oriented programming is an exceptionally bad idea which could only have originated in California.",
+    "Edsger W. Dijkstra",
+  },
+  {
+    "The question of whether a computer can think is no more interesting than the question of whether a submarine can swim.",
+    "Edsger W. Dijkstra",
+  },
+  { "Simplicity is prerequisite for reliability.", "Edsger W. Dijkstra" },
+  {
+    "Science is what we understand well enough to explain to a computer. Art is everything else we do.",
+    "Donald Knuth",
+  },
+}
+
 local headers = {
   [[
      ██████╗ ██████╗ ██████╗ ███████╗        ██████╗ ██████╗ ██████╗ ███████╗               
@@ -76,7 +108,7 @@ local headers = {
     \____/    \__,_|\___/|_| |_|\__|  \___| \_/ \___|_| |_| |_|\_\_| |_|\___/ \_/\_/   |_| |_|\___|_|   
   ]],
   [[
-                                                                                                    .''. 
+                                                                                       2             .''. 
                                                                         .''.      .        *''*    :_\/_:     . 
      _______   _______  __       _______ .___________. _______         :_\/_:   _\(/_  .:.*_\/_*   : /\ :  .'.:.'.
     |       \ |   ____||  |     |   ____||           ||   ____|    .''.: /\ :   ./)\   ':'* /\ * :  '..'.  -=:o:=-
@@ -110,5 +142,6 @@ return {
   "goolord/alpha-nvim",
   opts = function(_, opts)
     opts.section.header.val = vim.split(generate_header(), "\n", { trimempty = true })
+    ---opts.section.footer.val = quotes[1][1]
   end,
 }

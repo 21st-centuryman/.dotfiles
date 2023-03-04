@@ -1,0 +1,146 @@
+format = """
+[](gf:white)\
+$os\
+[](bg:blue fg:white)\
+$directory\
+[](fg:blue bg:purple)\
+$git_branch\
+$git_status\
+[](fg:purple bg:white)\
+$c\
+$elixir\
+$elm\
+$golang\
+$haskell\
+$java\
+$julia\
+$nodejs\
+$nim\
+$rust\
+[](fg:white)\
+$fill\
+[](fg:yellow)\
+$cmd_duration\
+[](fg:yellow)\
+$line_break\
+$character
+"""
+
+[directory]
+style = "bg:#1DA1F2"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "  "
+"Downloads" = "  "
+"Music" = "  "
+"Pictures" = "  "
+
+[c]
+symbol = " "
+style = "bg:white"
+format = '[[ $symbol ($version) ](fg:#A8B9CC bg:white)]($style)'
+
+[cmd_duration]
+min_time = 1000
+format = '[[ $duration](fg:black bg:yellow)]($style)'
+
+[docker_context]
+symbol = " "
+style = "bg:#06969A"
+format = '[[ $symbol $context ](bg:#06969A)]($style) $path'
+
+[elixir]
+symbol = " "
+style = "bg:white"
+format = '[[ $symbol ($version) ](fg:#4B275F bg:white)]($style)'
+
+[fill]
+symbol='━'
+
+[git_branch]
+symbol = ""
+style = "bg:purple"
+format = '[[ $symbol $branch ](bg:purple)]($style)'
+
+[git_status]
+style = "bg:purple"
+format = '[[($all_status$ahead_behind )](bg:purple)]($style)'
+
+[golang]
+symbol = " "
+style = "bg:white"
+format = '[[ $symbol ($version) ](fg:#00ADD8 bg:white)]($style)'
+
+[haskell]
+symbol = " "
+style = "bg:white"
+format = '[[ $symbol ($version) ](fg:#5D4F85 bg:white)]($style)'
+
+[java]
+symbol = " "
+style = "bg:white"
+format = '[[ $symbol ($version) ](fg:#007396 bg:white)]($style)'
+
+[julia]
+symbol = " "
+style = "bg:white"
+format = '[[ $symbol ($version) ](fg:#9558B2 bg:white)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:white"
+format = '[[ $symbol ($version) ](fg:#339933 bg:white)]($style)'
+
+[os]
+disabled = false
+style = "fg:black bg:white"
+format = "[[ $symbol](fg:black bg:white)]($style)"
+
+[rust]
+symbol = ""
+style = "bg:white"
+format = '[[ $symbol ($version) ](fg:#000000 bg:white)]($style)'
+
+# Setting my colors this will be done later
+[palettes.foo]
+
+[os.symbols]
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "﯑ "
+Gentoo = " "
+HardenedBSD = "ﲊ "
+Illumos = " "
+Linux = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = " "
+openSUSE = " "
+OracleLinux = " "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = " "
+Solus = "ﴱ "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = " "
