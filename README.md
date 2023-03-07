@@ -36,7 +36,7 @@ With this in mind I came to the following conclusions for what I should use:
 * Terminal: **Alacritty** ( *Settings are easily configured with a yml file & lack of features* )
     * Add on: **Starship** ( *To have a cross-shell prompt to account if I ever change from zsh* )
     * Add on: **Tmux** ( *To minimize the differences between a headless system and add functionality to alacritty* )
-* Shell: **ZSH** ( *Just overall awesome, also I will manually download packages as I see fit* )
+* Shell: **ZSH** ( *Just overall awesome, I hvae not explored fish or otehr alternatives yet, but idk how much they help me* )
 * IDE: **Neovim** ( *Easy config, easy built in package manager, great language support, and fast typing, once I learn how to type* )
 * Management: **Gnu stow** ( *Easy way to link files to official repo. I.e. changes in .config folder = changes in this repo* )
 * Web Browser: (I have not found a satisfactory web browser for this, and I doubt I will)

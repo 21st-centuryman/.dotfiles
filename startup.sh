@@ -13,6 +13,9 @@ run_script () {
   ln -s ~/.config/zsh/zshrc ~/.zshrc
   ln -s ~/.config/git/gitconfig ~/.gitconfig
   ln -s ~/.config/tmux/tmux.conf ~/.tmux.conf
+  
+  echo -e "Installing tpm, the tmux package manager"
+  git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 
   echo -e "Donwloading all CLI and gui apps (if you are on mac)"
 
