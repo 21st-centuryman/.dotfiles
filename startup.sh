@@ -17,8 +17,12 @@ run_script () {
   echo -e "Donwloading all CLI and gui apps (if you are on mac)"
 
   brew bundle --file=~/.config/homebrew/Brewfile
+  
+  echo -e "Downloading nerd fonts, you will hav eto install it manually."
+  cd ~/Downloads
+  wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
 
-  echo -e "\n\nDone with the installation. Enjoy your kickass dotfiles\n"
+  echo -e "\nDone with the installation. Enjoy your kickass dotfiles\n"
   echo -e "Goodbye\n"
   exit 1
 }
