@@ -1,5 +1,6 @@
 format = """
 $os\
+$hostname\
 $directory\
 $git_branch\
 $git_status\
@@ -22,6 +23,7 @@ palette = 'personal'
 
 [palettes.personal]
 os = '#FFFFFF'
+hostname = '#FFFFFF'
 directory = '#1DA1F2'
 duration = 'yellow'
 git = '#F05032'
@@ -36,7 +38,7 @@ nodejs = '#339933'
 rust = '#FFFFFF'
 
 [character]
-format = ' $symbol '
+format = '$symbol '
 
 [directory]
 style = "fg:directory"
@@ -80,6 +82,12 @@ symbol = ""
 style = 'golang'
 format = '[ $symbol]($style)[ $version ](fg:languages)'
 
+[hostname]
+ssh_only = false
+style = 'fg:hostname'
+format = '[$hostname]($style)'
+disabled = false
+
 [haskell]
 symbol = " "
 style = 'fg:haskell'
@@ -103,7 +111,7 @@ format = '[ $symbol]($style)[ $version ](fg:languages)'
 [os]
 disabled = false
 style = 'fg:os'
-format = '[[ $symbol]($style)]($style)'
+format = '[[$symbol]($style)]($style)'
 
 [rust]
 symbol = ""
