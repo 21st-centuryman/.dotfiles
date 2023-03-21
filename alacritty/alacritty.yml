@@ -7,6 +7,14 @@ shell:
     - -c
     - "tmux attach || tmux"
 
+window:
+  padding:
+    x: 5
+    y: 0
+  
+cursor:
+  style: Beam
+
 # Colors (iTerm 2 default theme)
 colors:
   # Default colors
