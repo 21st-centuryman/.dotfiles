@@ -45,7 +45,7 @@ Plus I also have other configuration files, like my gitconfig. More will definet
 
 Note that I also want to find a better package manager, one that can install both terminal and non-terminal based applications for all unix systems. I tried Nix but found it a hastle to install it on both linux and mac. AKA Nix = 🗑️
 
-I want to update on that latter point. I will try to move as much as I can as either a CLI or a terminal based application. So I think in the future I will add bookmarks and other stuff from my terminal here.
+I want to update on that latter point. I will try to move as much as I can as either a CLI or a browser based application. So I think in the future I will add bookmarks and other stuff from my terminal here.
 
 ## ⇁  File structure
 
