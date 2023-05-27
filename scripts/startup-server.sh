@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Installs the starting configuration for my server.
 
 echo -e "Running startup server program."
