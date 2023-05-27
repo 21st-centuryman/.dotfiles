@@ -4,7 +4,7 @@
 #### My configuration files and portable dev environment.
 
 [![Alacritty](https://img.shields.io/badge/Alacritty-F46D01.svg?style=for-the-badge&logoColor=white&logo=alacritty)](https://alacritty.org/)
-[![Fish](https://img.shields.io/badge/Fish-F15A24.svg?style=for-the-badge&logoColor=white&logo=gnubash)](https://fishshell.com/)
+[![Fish](https://img.shields.io/badge/Fish-000000.svg?style=for-the-badge&logoColor=white&logo=gnubash)](https://fishshell.com/)
 [![Git](https://img.shields.io/badge/git-F05032.svg?style=for-the-badge&logoColor=white&logo=git)](https://git-scm.com/)
 [![Homebrew](https://img.shields.io/badge/Homebrew-white.svg?style=for-the-badge&logoColor=FBB040&logo=homebrew)](https://brew.sh/)
 [![Neovim](https://img.shields.io/badge/Neovim-57A143.svg?style=for-the-badge&logoColor=white&logo=neovim)](https://neovim.io/)
