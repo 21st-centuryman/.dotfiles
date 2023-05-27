@@ -1,18 +1,23 @@
-# Startup
-
 shell:
-  program: /bin/zsh
+  program: /opt/homebrew/bin/fish
   args:
     - -l
     - -c
     - "tmux attach || tmux"
 
+#shell:
+#  program: /opt/homebrew/bin/fish
+#  args:
+#    - -l
+#    - -c
+#    - "zellij attach --index 0 --create"
+
 window:
   padding:
-    x: 5
-    y: 0
-  
-cursor:
+    x: 10
+    y: 10
+
+cursor: 
   style: Beam
 
 # Colors (iTerm 2 default theme)
