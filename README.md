@@ -36,7 +36,7 @@ With this in mind I came to the following conclusions for what I should use:
 * Terminal: **Alacritty** ( *Settings are easily configured with a yml file & lack of features* )
     * Add on: **Starship** ( *To have a cross-shell prompt to account if I ever change from zsh* )
     * Add on: **Tmux** ( *To minimize the differences between a headless system and add functionality to alacritty* )
-* Shell: **ZSH** ( *Just overall awesome, I have not explored fish or other alternatives yet, but idk how much they help me* )
+* Shell: **Fish** ( *Just overall awesome, amazing configuration and built in correction. No addons needed :)* )
 * IDE: **Neovim** ( *Easy config, easy built in package manager, great language support, and fast typing, once I learn how to type* )
 * Management: **Gnu stow** ( *Easy way to link files to official repo. I.e. changes in .config folder = changes in this repo* )
 * Web Browser: (I have not found a satisfactory web browser for this, and I doubt I will)
@@ -45,12 +45,16 @@ Plus I also have other configuration files, like my gitconfig. More will definet
 
 Note that I also want to find a better package manager, one that can install both terminal and non-terminal based applications for all unix systems. I tried Nix but found it a hastle to install it on both linux and mac. AKA Nix = 🗑️
 
+I want to update on that latter point. I will try to move as much as I can as either a CLI or a terminal based application. So I think in the future I will add bookmarks and other stuff from my terminal here.
+
 ## ⇁  File structure
 
 ```
 ├── README.md
 ├── alacritty
 │   └── alacritty.yml
+├──  fish
+│   └── config.fish
 ├── git
 │   └── gitconfig
 ├── homebrew
@@ -63,14 +67,15 @@ Note that I also want to find a better package manager, one that can install bot
 │   ├── lazy-lock.json
 │   ├── lua
 │   └── stylua.toml
+├── scripts
+│   ├── startup-personal.sh
+│   └── startup-server.sh
 ├── starship
 │   └── starship.toml
 ├── startup.sh
-├── tmux
-│   ├── plugins
-│   └── tmux.conf
-└── zsh
-    └── zshrc
+└── tmux
+    ├── plugins
+    └── tmux.conf
 ```
 name* = directory 
 
