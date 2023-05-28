@@ -6,11 +6,10 @@ run_script () {
   stow -t ~/.config/. .
 
   echo -e "Sourcing all the directores that do not check the .config directories by default\n"
-  echo -e "As of feb 2023, these files are git, tmux, and zsh.\n"
+  echo -e "As of feb 2023, these files are git, and tmux.\n"
 
-  rm ~/.gitconfig ~/.zshrc ~/.tmux.conf
+  rm ~/.gitconfig ~/.tmux.conf
 
-  ln -s ~/.config/zsh/zshrc ~/.zshrc
   ln -s ~/.config/git/gitconfig ~/.gitconfig
   ln -s ~/.config/tmux/tmux.conf ~/.tmux.conf
   
