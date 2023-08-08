@@ -60,11 +60,6 @@ format = '[[ $duration]($style)]($style)'
 #symbol = " "
 #format = '[[ $symbol $context ](bg:#06969A)]($style) $path'
 
-[elixir]
-symbol = ""
-style = 'fg:elixir'
-format = '[ $symbol]($style)[ $version ](fg:languages)'
-
 [fill]
 symbol='━'
 
@@ -76,11 +71,15 @@ format = '[ $symbol $branch]($style)'
 [git_status]
 style = 'fg:git'
 format = '[ $all_status$ahead_behind ]($style)'
+[elixir]
+symbol = ""
+style = 'fg:elixir'
+format = '[$symbol]($style)[ $version ](fg:languages)'
 
 [golang]
 symbol = ""
 style = 'golang'
-format = '[ $symbol]($style)[ $version ](fg:languages)'
+format = '[$symbol]($style)[ $version ](fg:languages)'
 
 [hostname]
 ssh_only = false
@@ -89,24 +88,24 @@ format = '[$hostname]($style)'
 disabled = false
 
 [haskell]
-symbol = " "
+symbol = ""
 style = 'fg:haskell'
-format = '[ $symbol]($style)[ $version ](fg:languages)'
+format = '[$symbol]($style)[ $version ](fg:languages)'
 
 [java]
 symbol = ""
 style = 'fg:java'
-format = '[ $symbol]($style)[ $version ](fg:languages)'
+format = '[$symbol]($style)[ $version ](fg:languages)'
 
 [julia]
 symbol = ""
 style = 'fg:julia'
-format = '[ $symbol]($style)[ $version ](fg:languages)'
+format = '[$symbol]($style)[ $version ](fg:languages)'
 
 [nodejs]
 symbol = ""
 style = 'fg:nodejs'
-format = '[ $symbol]($style)[ $version ](fg:languages)'
+format = '[$symbol]($style)[ $version ](fg:languages)'
 
 [os]
 disabled = false
@@ -116,7 +115,7 @@ format = '[[$symbol]($style)]($style)'
 [rust]
 symbol = ""
 style = 'fg:rust'
-format = '[ $symbol]($style)[ $version ](fg:languages)'
+format = '[$symbol]($style)[ $version ](fg:languages)'
 
 [os.symbols]
 Alpine = " "
