@@ -3,7 +3,7 @@
 run_script () {
   brew install stow
   echo -e "Stowing the files"
-  stow -t ~/.config/. .
+  stow -t ~/.config/. ../.
 
   echo -e "Sourcing all the directores that do not check the .config directories by default\n"
   echo -e "As of feb 2023, these files are git, and tmux.\n"
