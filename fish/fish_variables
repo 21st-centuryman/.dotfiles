@@ -2,7 +2,8 @@
 # VERSION: 3.0
 SETUVAR --export CARGO_HOME:/Users/cab/\x2econfig/cargo
 SETUVAR --export EDITOR:nvim
-SETUVAR --export RUSTUP_HOME:/Users/cab/\x2econfig/rustup
+SETUVAR --export OPENAI_API_KEY:/Users/cab/\x2econfig/openai/openai\x2ekey
+SETUVAR --export RUSTUP_HOME:/Users/cab/\x2ecargo/rustup
 SETUVAR --export STARSHIP_CONFIG:/Users/cab/\x2econfig/starship/starship\x2etoml
 SETUVAR --export VISUAL:nvim
 SETUVAR __fish_initialized:3400

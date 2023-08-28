@@ -10,10 +10,10 @@
 #softwareupdate --install-rosetta
 
 # zsh on x86
-arch -x86_64 zsh
+#arch -x86_64 zsh
 
 # Installing x86 homebrew. Yes we need this.
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Setting up the paths for homebrew
 eval "$(/usr/local/bin/brew shellenv)"

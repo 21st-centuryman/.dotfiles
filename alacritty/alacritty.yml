@@ -1,15 +1,10 @@
 shell:
+  #program: /usr/bin/fish
   program: /opt/homebrew/bin/fish
   args:
     - -l
     - -c
     - "tmux attach || tmux"
-
-#shell:
-#  program: /opt/homebrew/bin/fish
-#  args:
-#    - -l
-#    - -c
 #    - "zellij attach --index 0 --create"
 
 window:

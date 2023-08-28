@@ -182,6 +182,63 @@ local headers = {
                                                             ddddx         Oolx                                                                            
                                                                             kk                                                                            
   ]],
+  [[
+
+         ╦ ╦┌─┐┌─┐┬─┐  ┌─┐┌─┐  ┌┬┐┬ ┬┌─┐                                       _
+         ╚╦╝├┤ ├─┤├┬┘  │ │├┤    │ ├─┤├┤                                       (_)
+          ╩ └─┘┴ ┴┴└─  └─┘└     ┴ ┴ ┴└─┘                |    .
+          ╔═╗┌─┐┌─┐┌┐┌╔╗ ╔═╗╔╦╗                     .   |L  /|   .          _
+          ║ ║├─┘├┤ │││╠╩╗╚═╗ ║║                 _ . |\ _| \--+._/| .       (_)
+          ╚═╝┴  └─┘┘└┘╚═╝╚═╝═╩╝                / ||\| Y J  )   / |/| ./
+          ╔╦╗┌─┐┌─┐┬┌─┌┬┐┌─┐┌─┐               J  |)'( |        ` F`.'/        _
+           ║║├┤ └─┐├┴┐ │ │ │├─┘             -<|  F         __     .-<        (_)
+          ═╩╝└─┘└─┘┴ ┴ ┴ └─┘┴                 | /       .-'. `.  /-. L___
+                                              J \\      <    \  | | O\\|.-'  _
+                                            _J \\  .-    \\/ O | | \\  |F    (_)
+                                           '-F  -<_.     \\   .-'  `-' L__
+                                          __J  _   _.     >-'  )._.   |-'
+                                           `-|.'   /_.          \_|   F
+                                            /.-   .                _.<
+                                           /'    /.'             .'  `\\
+                                            /L  /'   |/      _.-'-\\
+                                           /'J       ___.---'\|
+                                             |\  .--' V  | `. `
+                                             |/`. `-.     `._)
+                                                / .-.\\
+                                                \\ (  `\\
+                                                 `.\\
+  ]],
+  [[
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠔⠒⠒⠒⠒⠒⠢⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⡰⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠑⢄⡀⠀⠀⠀⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⡸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠙⠄⠀⠀⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⢀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠃⠀⢠⠂⠀⠀⠘⡄⠀⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠈⢤⡀⢂⠀⢨⠀⢀⡠⠈⢣⠀⠀⠀⠀⠀"Since I am insecure about my intelligence    
+        ⠀⠀⠀⠀⠀⢀⢀⡖⠒⠶⠤⠭⢽⣟⣗⠲⠖⠺⣖⣴⣆⡤⠤⠤⠼⡄⠀⠀⠀ and unable to take the time to understand     
+        ⠀⠀⠀⠀⠀⠘⡈⠃⠀⠀⠀⠘⣺⡟⢻⠻⡆⠀⡏⠀⡸⣿⢿⢞⠄⡇⠀⠀⠀⠀new programming concepts. I think Rust is a   
+        ⠀⠀⠀⠀⠀⠀⢣⡀⠤⡀⡀⡔⠉⣏⡿⠛⠓⠊⠁⠀⢎⠛⡗⡗⢳⡏⠀⠀⠀⠀horrible language and it will take longer for 
+        ⠀⠀⠀⠀⠀⠀⠀⢱⠀⠨⡇⠃⠀⢻⠁⡔⢡⠒⢀⠀⠀⡅⢹⣿⢨⠇⠀⠀⠀⠀our team to program in it. Therefore we should
+        ⠀⠀⠀⠀⠀⠀⠀⢸⠀⠠⢼⠀⠀⡎⡜⠒⢀⠭⡖⡤⢭⣱⢸⢙⠆⠀⠀⠀⠀⠀just use go or another language that does not 
+        ⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⠸⢁⡀⠿⠈⠂⣿⣿⣿⣿⣿⡏⡍⡏⠀⠀⠀⠀⠀⠀challenge my intellect for our next project." 
+        ⠀⠀⠀⠀⠀⠀⢀⠇⠀⠀⠀⠀⠸⢢⣫⢀⠘⣿⣿⡿⠏⣼⡏⠀⠀⠀⠀⠀⠀⠀
+        ⠀⠀⠀⠀⣀⣠⠊⠀⣀⠎⠁⠀⠀⠀⠙⠳⢴⡦⡴⢶⣞⣁⣀⣀⡀⠀⠀⠀⠀⠀
+       ⠀⠐⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠀⢀⠤⠀⠀⠀⠀⠀⠀⠀⠈⠉⠀⠀⠀⠀ 
+  ]],
+  [[
+    yyyyyy xxxxxx               
+     yyyyyy xxxxxx              
+      yyyyyy xxxxxx             
+       yyyyyy xxxxxx            
+        yyyyyy xxxxxx yyyyyyyyyy
+         yyyyyy xxxxxx yyyyyyyyy
+          yyyyyy xxxxxx
+         yyyyyy xxxxxxxx yyyyyyy
+        yyyyyy xxxxxxxxxx yyyyyy
+       yyyyyy xxxxxxxxxxxx
+      yyyyyy xxxxxx  xxxxxx
+     yyyyyy xxxxxx    xxxxxx
+    yyyyyy xxxxxx      xxxxxx
+  ]],
 }
 
 local function generate_header()
