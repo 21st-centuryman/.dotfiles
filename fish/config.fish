@@ -29,7 +29,6 @@ alias vim='nvim'
 set -Ux EDITOR nvim
 set -Ux VISUAL nvim
 
-set -Ux OPENAI_API_KEY ~/.config/openai/openai.key
 set -Ux CARGO_HOME ~/.config/cargo
 set -Ux RUSTUP_HOME ~/.cargo/rustup
 set -Ux STARSHIP_CONFIG ~/.config/starship/starship.toml

@@ -250,6 +250,6 @@ return {
   "goolord/alpha-nvim",
   opts = function(_, opts)
     opts.section.header.val = vim.split(generate_header(), "\n", { trimempty = true })
-    ---opts.section.footer.val = quotes[1][1]
+    --opts.section.footer.val = quotes[1][1]
   end,
 }
