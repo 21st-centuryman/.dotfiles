@@ -16,14 +16,11 @@ window:
 cursor: 
   style: Beam
 
-# Colors (iTerm 2 default theme)
+# Colors Catpucchini mocha
 colors:
-  # Default colors
   primary:
     background: "#1E1E2E" # base
     foreground: "#CDD6F4" # text
-
-  # Normal colors
   normal:
     black: "#45475A" # surface1
     red: "#F38BA8" # red
@@ -33,9 +30,6 @@ colors:
     magenta: "#F5C2E7" # pink
     cyan: "#94E2D5" # teal
     white: "#BAC2DE" # subtext1
-
-
-  # Bright colors
   bright:
     black: "#585B70" # surface2
     red: "#F38BA8" # red
