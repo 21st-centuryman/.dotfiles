@@ -225,19 +225,19 @@ local headers = {
        ⠀⠐⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠀⢀⠤⠀⠀⠀⠀⠀⠀⠀⠈⠉⠀⠀⠀⠀ 
   ]],
   [[
-    yyyyyy xxxxxx               
-     yyyyyy xxxxxx              
-      yyyyyy xxxxxx             
-       yyyyyy xxxxxx            
-        yyyyyy xxxxxx yyyyyyyyyy
-         yyyyyy xxxxxx yyyyyyyyy
-          yyyyyy xxxxxx
-         yyyyyy xxxxxxxx yyyyyyy
-        yyyyyy xxxxxxxxxx yyyyyy
-       yyyyyy xxxxxxxxxxxx
-      yyyyyy xxxxxx  xxxxxx
-     yyyyyy xxxxxx    xxxxxx
-    yyyyyy xxxxxx      xxxxxx
+    yyyyyy xxxxxx                  
+     yyyyyy xxxxxx                  __ _                                _               _               
+      yyyyyy xxxxxx                / _\ |_ ___  _ __     ___ _ __ _   _(_)_ __   __ _  | |__  _ __ ___  
+       yyyyyy xxxxxx               \ \| __/ _ \| '_ \   / __| '__| | | | | '_ \ / _` | | '_ \| '__/ _ \ 
+        yyyyyy xxxxxx yyyyyyyyyy   _\ \ || (_) | |_) | | (__| |  | |_| | | | | | (_| | | |_) | | | (_) |
+         yyyyyy xxxxxx yyyyyyyyy   \__/\__\___/| .__/   \___|_|   \__, |_|_| |_|\__, | |_.__/|_|  \___/ 
+          yyyyyy xxxxxx                        |_|                |___/         |___/                   
+         yyyyyy xxxxxxxx yyyyyyy    _ _           _           _                     _   _               
+        yyyyyy xxxxxxxxxx yyyyyy   (_) |_ ___    (_)_   _ ___| |_   _ __ ___   __ _| |_| |__            
+       yyyyyy xxxxxxxxxxxx         | | __/ __|   | | | | / __| __| | '_ ` _ \ / _` | __| '_ \           
+      yyyyyy xxxxxx  xxxxxx        | | |_\__ \   | | |_| \__ \ |_  | | | | | | (_| | |_| | | |          
+     yyyyyy xxxxxx    xxxxxx       |_|\__|___/  _/ |\__,_|___/\__| |_| |_| |_|\__,_|\__|_| |_|          
+    yyyyyy xxxxxx      xxxxxx                  |__/                                                     
   ]],
 }
 

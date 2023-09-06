@@ -17,4 +17,16 @@ return {
       vim.fn["mkdp#util#install"]()
     end,
   },
+  -- LaTex preview
+  {
+    "lervag/vimtex",
+    --vimtex_view_method = "sioyek",
+  },
+  -- Wrapping
+  {
+    "andrewferrier/wrapping.nvim",
+    config = function()
+      require("wrapping").setup()
+    end,
+  },
 }
