@@ -1,8 +1,4 @@
-if status --is-login
-    set -gx PATH $PATH ~/.config/cargo/bin
-end
-
-# Startuo
+# Startup
 echo ""
 pfetch
 
@@ -32,6 +28,13 @@ set -Ux VISUAL nvim
 set -Ux CARGO_HOME ~/.config/cargo
 set -Ux RUSTUP_HOME ~/.cargo/rustup
 set -Ux STARSHIP_CONFIG ~/.config/starship/starship.toml
+#set -x CC aarch64-linux-gnu-gcc
+#set -x CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_LINKER aarch64-unknown-linux-gnu
+
+if status --is-login
+    set -gx PATH $PATH ~/.config/cargo/bin
+end
+
 
 # Set up starship
 starship init fish | source
