@@ -51,3 +51,61 @@ while true; do
 		;;
 	esac
 done
+
+### REWRITE BELOW ###
+
+os_deps() {
+	case "$1" in
+	"darwin")
+		brew install ninja cmake gettext curl # Neovim
+		brew install curl                     # Cargo packages
+		;;
+	"openbsd")
+		pkg_add gmake cmake unzip curl gettext-tools # Neovim
+		pkg_add curl                                 # Cargo packages
+		;;
+	"artix")
+		pacman -S base-devel cmake unzip ninja curl # Neovim
+		pacman -S curl                              # Cargo packages
+		;;
+	"alpine")
+		apk add build-base cmake coreutils curl unzip gettext-tiny-dev # Neovim
+		apk add curl                                                   # Cargo packages
+		;;
+	# Add more cases for other operating systems as needed
+	*) ;;
+	esac
+}
+
+build_nvim() {
+	local build_command="make"
+
+	cd ../source/neovim/ || exit
+	git checkout stable
+
+	if [ "$1" = "openbsd" ]; then # I NEED TO CHECK THIS LATER
+		build_command="gmake"
+	fi
+
+	$build_command CMAKE_BUILD_TYPE=RelWithDebInfo
+	$build_command install
+	cd ../../../
+}
+
+build_dwm() {
+	cd ../source/dwm/ || exit
+
+	if [ "$1" != "darwin" ]; then
+		make clean install
+	fi
+	cd ../../../
+}
+
+build_st() {
+	cd ../source/st/ || exit
+
+	if [ "$1" != "darwin" ]; then
+		make clean install
+	fi
+	cd ../../../
+}
