@@ -9,4 +9,6 @@ wget -P ~/.config/fish https://raw.githubusercontent.com/21st-centuryman/dotfile
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
+fish
+
 cargo install pfetch starship cargo-update
