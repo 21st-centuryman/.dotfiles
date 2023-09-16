@@ -50,7 +50,7 @@ mantle = "#181825"
 crust = "#11111b"
 
 [character]
-format = ' $symbol '
+format = '$symbol '
 
 [directory]
 style = "fg:sky"
@@ -124,7 +124,7 @@ format = '[$symbol]($style)[ $version ](fg:white)'
 [os]
 disabled = false
 style = 'fg:text'
-format = ' [[$symbol]($style)]($style)'
+format = '[[$symbol]($style)]($style)'
 
 [rust]
 symbol = ""
