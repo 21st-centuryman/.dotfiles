@@ -1,3 +1,8 @@
+# So cargo gets initalized
+if status --is-login
+    set -gx PATH $PATH ~/.config/cargo/bin
+end
+
 # Startup
 echo ""
 pfetch
@@ -31,10 +36,8 @@ set -Ux STARSHIP_CONFIG ~/.config/starship/starship.toml
 #set -x CC aarch64-linux-gnu-gcc
 #set -x CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_LINKER aarch64-unknown-linux-gnu
 
-if status --is-login
-    set -gx PATH $PATH ~/.config/cargo/bin
-end
-
-
+# Startup
+echo ""
+pfetch
 # Set up starship
 starship init fish | source
