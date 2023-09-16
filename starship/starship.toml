@@ -19,23 +19,35 @@ $line_break\
 $character
 """
 
-palette = 'personal'
+palette = 'catppuccin_mocha'
 
-[palettes.personal]
-os = '#FFFFFF'
-hostname = '#FFFFFF'
-directory = '#1DA1F2'
-duration = 'yellow'
-git = '#F05032'
-languages = '#FFFFFF'
-c = '#A8B9CC'
-elixir = '#4B275F'
-golang = '#00ADD8'
-haskell = '#5D4F85'
-java = '#007396'
-julia = '#9558B2'
-nodejs = '#339933'
-rust = '#FFFFFF'
+[palettes.catppuccin_mocha]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+blue = "#89b4fa"
+lavender = "#b4befe"
+text = "#cdd6f4"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#313244"
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#11111b"
 
 [character]
 format = '$symbol '
