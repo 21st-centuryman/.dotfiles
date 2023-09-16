@@ -50,88 +50,89 @@ mantle = "#181825"
 crust = "#11111b"
 
 [character]
-format = '$symbol '
+format = ' $symbol '
 
 [directory]
-style = "fg:directory"
+style = "fg:sky"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
 [c]
 symbol = ""
-style = 'fg:c'
-format = '[ $symbol]($style)[ $version ](fg:languages)'
+style = 'fg:sky'
+format = '[ $symbol]($style)[ $version ](fg:white)'
 
 [cmd_duration]
 min_time = 1000
-style = 'fg:duration'
+style = 'fg:yellow'
 format = '[[ $duration]($style)]($style)'
 
-#[docker_context]
-#symbol = " "
-#format = '[[ $symbol $context ](bg:#06969A)]($style) $path'
+[docker_context]
+symbol = " "
+style = 'fg:blue'
+format = '[$symbol]($style)[ $version ](fg:white)'
 
 [fill]
 symbol='━'
 
 [git_branch]
 symbol = ""
-style = 'fg:git'
+style = 'fg:red'
 format = '[ $symbol $branch]($style)'
 
 [git_status]
-style = 'fg:git'
+style = 'fg:red'
 format = '[ $all_status$ahead_behind ]($style)'
+
 [elixir]
 symbol = ""
-style = 'fg:elixir'
-format = '[$symbol]($style)[ $version ](fg:languages)'
+style = 'fg:mauve'
+format = '[$symbol]($style)[ $version ](fg:white)'
 
 [golang]
 symbol = ""
-style = 'golang'
-format = '[$symbol]($style)[ $version ](fg:languages)'
+style = 'fg:blue'
+format = '[$symbol]($style)[ $version ](fg:white)'
 
 [hostname]
 ssh_only = false
-style = 'fg:hostname'
+style = 'fg:text'
 format = '[$hostname]($style)'
 disabled = false
 
 [haskell]
 symbol = ""
-style = 'fg:haskell'
-format = '[$symbol]($style)[ $version ](fg:languages)'
+style = 'fg:mauve'
+format = '[$symbol]($style)[ $version ](fg:white)'
 
 [java]
 symbol = ""
-style = 'fg:java'
-format = '[$symbol]($style)[ $version ](fg:languages)'
+style = 'fg:peach'
+format = '[$symbol]($style)[ $version ](fg:white)'
 
 [julia]
 symbol = ""
-style = 'fg:julia'
-format = '[$symbol]($style)[ $version ](fg:languages)'
+style = 'fg:lavender'
+format = '[$symbol]($style)[ $version ](fg:white)'
 
 [nodejs]
 symbol = ""
-style = 'fg:nodejs'
-format = '[$symbol]($style)[ $version ](fg:languages)'
+style = 'fg:green'
+format = '[$symbol]($style)[ $version ](fg:white)'
 
 [os]
 disabled = false
-style = 'fg:os'
-format = '[[$symbol]($style)]($style)'
+style = 'fg:text'
+format = ' [[$symbol]($style)]($style)'
 
 [rust]
 symbol = ""
-style = 'fg:rust'
-format = '[$symbol]($style)[ $version ](fg:languages)'
+style = 'fg:peach'
+format = '[$symbol]($style)[ $version ](fg:white)'
 
 [os.symbols]
 Alpine = " "
-Amazon = " "
 Android = " "
 Arch = " "
 CentOS = " "
@@ -139,7 +140,6 @@ Debian = " "
 DragonFly = " "
 Emscripten = " "
 EndeavourOS = " "
-Fedora = " "
 FreeBSD = " "
 Garuda = "﯑ "
 Gentoo = " "
@@ -155,11 +155,8 @@ NetBSD = " "
 NixOS = " "
 OpenBSD = " "
 openSUSE = " "
-OracleLinux = " "
 Pop = " "
 Raspbian = " "
-Redhat = " "
-RedHatEnterprise = " "
 Redox = " "
 Solus = "ﴱ "
 SUSE = " "
