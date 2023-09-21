@@ -38,3 +38,7 @@ set -Ux STARSHIP_CONFIG ~/.config/starship/starship.toml
 
 # Set up starship
 starship init fish | source
+
+# Color themes
+#fish_config theme save "Catppuccin Frappe" # Light mode
+#fish_config theme save "Catppuccin Mocha" # Dark mode
