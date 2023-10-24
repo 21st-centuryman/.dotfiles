@@ -193,24 +193,10 @@ local headers = {
   ]],
 }
 
-local function generate_header()
+local function generate(type)
   math.randomseed(os.time())
-  return headers[math.random(#headers)]
+  return (type == "header") and headers[math.random(#headers)] or quotes[math.random(#quotes)]
 end
-
-local function generate_footer()
-  math.randomseed(os.time())
-  return quotes[math.random(#quotes)]
-end
---
---return {
---  "nvimdev/dashboard-nvim",
---  event = "VimEnter",
---  opts = function(, opts)
---    opts.section.header.val = vim.split(generate_header(), "\n", { trimempty = true })
---    --opts.section.footer.val = quotes[1][1]
---  end,
---}
 
 return {
   "nvimdev/dashboard-nvim",
@@ -224,13 +210,11 @@ return {
         statusline = false,
       },
       config = {
-        header = vim.split(generate_header(), "\n"),
-        "\n",
+        header = vim.split(generate("header"), "\n"),
         -- stylua: ignore
         center = {
           { action = "Telescope find_files",                                     desc = " Find file",       icon = " ", key = "f" },
           { action = "ene | startinsert",                                        desc = " New file",        icon = " ", key = "n" },
-          { action = "Telescope oldfiles",                                       desc = " Recent files",    icon = " ", key = "r" },
           { action = "Telescope live_grep",                                      desc = " Find text",       icon = " ", key = "g" },
           { action = "Mason",                                                    desc = " Mason",           icon = "󰢛 ", key = "m" },
           { action = [[lua require("lazyvim.util").telescope.config_files()()]], desc = " Config",          icon = " ", key = "c" },
@@ -240,8 +224,8 @@ return {
           { action = "qa",                                                       desc = " Quit",            icon = " ", key = "q" },
         },
         footer = function()
-          local stats = require("lazy").stats()
-          local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
+          --local stats = require("lazy").stats()
+          --local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
           return {
             --"⚡ Neovim loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms .. "ms",
             "",
@@ -251,8 +235,8 @@ return {
             "4. Accelerate cycle time.             ",
             "5. Automate.                          ",
             "",
-            generate_footer()[1],
-            "- " .. generate_footer()[2],
+            generate("footer")[1],
+            "- " .. generate("footer")[2],
           }
         end,
       },
