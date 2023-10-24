@@ -17,7 +17,7 @@ alias Documents="cd ~/Documents"
 #alias apts="sudo apt update; sudo apt upgrade"
 alias brews="brew update; brew upgrade; brew autoremove; brew doctor"
 alias cargos="cargo install-update -a"
-alias ds_store="sudo find ../../../. -name ".DS_Store" -delete"
+alias ds_store="sudo find ~/../../. -name ".DS_Store" -delete"
 # Getting rusty
 alias grep='rg'
 alias cat='bat'
