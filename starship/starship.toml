@@ -117,7 +117,7 @@ style = 'fg:lavender'
 format = '[$symbol]($style)[ $version ](fg:white)'
 
 [nodejs]
-symbol = ""
+symbol = "󰎙"
 style = 'fg:green'
 format = '[$symbol]($style)[ $version ](fg:white)'
 
@@ -127,39 +127,27 @@ style = 'fg:text'
 format = '[[$symbol]($style)]($style)'
 
 [rust]
-symbol = ""
+symbol = ""
 style = 'fg:peach'
 format = '[$symbol]($style)[ $version ](fg:white)'
 
 [os.symbols]
 Alpine = " "
 Android = " "
-Arch = " "
-CentOS = " "
-Debian = " "
-DragonFly = " "
-Emscripten = " "
-EndeavourOS = " "
+Arch = "󰣇 "
+Debian = " "
 FreeBSD = " "
-Garuda = "﯑ "
+Garuda = " "
 Gentoo = " "
-HardenedBSD = "ﲊ "
-Illumos = " "
 Linux = " " # I can not be bothered to make a PR for steamos, until they add it I will just change the linux icon.
 Macos = " "
 Manjaro = " "
-Mariner = " "
-MidnightBSD = " "
-Mint = " "
+Mint = "󰣭 "
 NetBSD = " "
 NixOS = " "
-OpenBSD = " "
+OpenBSD = " "
 openSUSE = " "
-Pop = " "
-Raspbian = " "
-Redox = " "
-Solus = "ﴱ "
 SUSE = " "
-Ubuntu = " "
+Ubuntu = " "
 Unknown = " "
-Windows = " "
+Windows = " "

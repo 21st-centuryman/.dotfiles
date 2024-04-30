@@ -1,8 +1,3 @@
-# So cargo gets initalized
-if status --is-login
-    set -gx PATH $PATH ~/.config/cargo/bin
-end
-
 # Startup
 echo ""
 pfetch
@@ -17,7 +12,8 @@ alias Documents="cd ~/Documents"
 #alias apts="sudo apt update; sudo apt upgrade"
 alias brews="brew update; brew upgrade; brew autoremove; brew doctor"
 alias cargos="cargo install-update -a"
-alias ds_store="sudo find ~/../../. -name ".DS_Store" -delete"
+alias buildvi="cd ~/Documents/Projects/dotfiles/source/neovim && git pull && make CMAKE_BUILD_TYPE=RelWithDebInfo && sudo make install && cd ~"
+alias ds_store="sudo find /* -name ".DS_Store" -delete"
 # Getting rusty
 alias grep='rg'
 alias cat='bat'
@@ -35,6 +31,7 @@ set -Ux RUSTUP_HOME ~/.cargo/rustup
 set -Ux STARSHIP_CONFIG ~/.config/starship/starship.toml
 #set -x CC aarch64-linux-gnu-gcc
 #set -x CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_LINKER aarch64-unknown-linux-gnu
+set -x OPENSCADPATH ~/.config/openscad
 
 # Set up starship
 starship init fish | source
