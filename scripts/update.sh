@@ -4,6 +4,3 @@
 echo -e "Updating the server program"
 rm ~/.config/starship/starship.toml
 wget -P ~/.config/starship/ https://raw.githubusercontent.com/21st-centuryman/dotfiles/main/starship/starship.toml
-
-rm ~/.config/fish/config.fish
-wget -P ~/.config/fish https://raw.githubusercontent.com/21st-centuryman/dotfiles/main/fish/config.fish

@@ -1,12 +1,17 @@
 # Startup
 echo "" && pfetch
 
+# History in cache directory
+HISTSIZE=10000
+SAVEHIST=10000
+HISTFILE=~/.cache/zsh/history
 
-# Basic auto/tab complete:
+# Basic auto/tab complete
 autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
+_comp_options+=(globdots)		# Include hidden files.
 
 # Aliases
 alias Projects='cd ~/Documents/Projects/'
