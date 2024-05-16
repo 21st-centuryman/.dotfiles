@@ -1,7 +1,6 @@
 [submodule "source/neovim"]
 	path = source/neovim
 	url = https://github.com/neovim/neovim.git
-  branch = stable
 [submodule "source/dwm"]
 	path = source/dwm
 	url = git@github.com:21st-centuryman/dwm.git

@@ -37,6 +37,7 @@ export VISUAL='nvim'
 export CARGO_HOME="$HOME/.config/cargo"
 export RUSTUP_HOME="$HOME/.cargo/rustup"
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
+source /Users/cab/python3/bin/activate
 
 # History stuff
 bindkey '^[[A' history-substring-search-up
