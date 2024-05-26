@@ -4,13 +4,13 @@
 #### My configuration files and portable dev environment.
 
 [![Alacritty](https://img.shields.io/badge/Alacritty-F46D01.svg?style=for-the-badge&logoColor=white&logo=alacritty)](https://alacritty.org/)
-[![Fish](https://img.shields.io/badge/Fish-000000.svg?style=for-the-badge&logoColor=white&logo=gnubash)](https://fishshell.com/)
 [![Git](https://img.shields.io/badge/git-F05032.svg?style=for-the-badge&logoColor=white&logo=git)](https://git-scm.com/)
 [![Homebrew](https://img.shields.io/badge/Homebrew-white.svg?style=for-the-badge&logoColor=FBB040&logo=homebrew)](https://brew.sh/)
 [![Neovim](https://img.shields.io/badge/Neovim-57A143.svg?style=for-the-badge&logoColor=white&logo=neovim)](https://neovim.io/)
 [![Starship](https://img.shields.io/badge/Starship-DD0B78.svg?style=for-the-badge&logoColor=white&logo=starship)](https://starship.rs/)
 [![Stow](https://img.shields.io/badge/GNU_Stow-white.svg?style=for-the-badge&logoColor=black&logo=gnu)](https://www.gnu.org/software/stow/)
 [![Tmux](https://img.shields.io/badge/tmux-1BB91F.svg?style=for-the-badge&logoColor=white&logo=tmux)](https://github.com/tmux/tmux)
+[![Zsh](https://img.shields.io/badge/Zsh-000000.svg?style=for-the-badge&logoColor=white&logo=Zsh)]([https://fishshell.com/](https://www.zsh.org/))
 
 </div>
 
@@ -36,16 +36,14 @@ With this in mind I came to the following conclusions for what I should use:
 * Terminal: **Alacritty** ( *Settings are easily configured with a yml file & lack of features* )
     * Add on: **Starship** ( *To have a cross-shell prompt to account if I ever change from zsh* )
     * Add on: **Tmux** ( *To minimize the differences between a headless system and add functionality to alacritty* )
-* Shell: **Fish** ( *Just overall awesome, amazing configuration and built in correction. No addons needed :)* )
-* IDE: **Neovim** ( *Easy config, easy built in package manager, great language support, and fast typing, once I learn how to type* )
+* Shell: **Zsh** ( * mazing, with a few addons and some zsh completions its amazing, I will actively work to make it better* )
+* IDE: **LazyVim** ( *Easy config, easy built in package manager, great language support, and fast typing, once I learn how to type* )
 * Management: **Gnu stow** ( *Easy way to link files to official repo. I.e. changes in .config folder = changes in this repo* )
-* Web Browser: (I have not found a satisfactory web browser for this, and I doubt I will)
+* Web Browser: (Firefox as of now with some great plugins, I will keep exploring)
     
 Plus I also have other configuration files, like my gitconfig. More will definetly appear here as I continue my exploration.
 
-Note that I also want to find a better package manager, one that can install both terminal and non-terminal based applications for all unix systems. I tried Nix but found it a hastle to install it on both linux and mac. AKA Nix = 🗑️
-
-I want to update on that latter point. I will try to move as much as I can as either a CLI or a browser based application. So I think in the future I will add bookmarks and other stuff from my terminal here.
+Note that I also want to find a better package manager, one that can install both terminal and non-terminal based applications for all unix systems. I tried Nix but found it a hastle to install it on both linux and mac. I am in the process to move as much as possible to the terminal or the browser and build stuff from source, with the goal to make my setup package manager independent.
 
 ## ⇁  File structure
 
@@ -53,8 +51,8 @@ I want to update on that latter point. I will try to move as much as I can as ei
 ├── README.md
 ├── alacritty
 │   └── alacritty.yml
-├──  fish
-│   └── config.fish
+├──  zsh
+│   └── zsh.rc
 ├── git
 │   └── gitconfig
 ├── homebrew
@@ -68,8 +66,6 @@ I want to update on that latter point. I will try to move as much as I can as ei
 │   ├── lua
 │   └── stylua.toml
 ├── scripts
-│   ├── startup-personal.sh
-│   └── startup-server.sh
 ├── starship
 │   └── starship.toml
 ├── startup.sh
@@ -77,12 +73,3 @@ I want to update on that latter point. I will try to move as much as I can as ei
     ├── plugins
     └── tmux.conf
 ```
-name* = directory 
-
-## ⇁ FAQ
-Why not sure nix? 
-\- Bruh
-
-## ⇁ Improvements
-- Easy to install package manager for unix systems
-- Remove the dracula tmux extension for one with more freedom to customize
