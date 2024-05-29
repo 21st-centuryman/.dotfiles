@@ -30,4 +30,40 @@ return {
     end,
     opts = {},
   },
+  -- Obsidian
+  {
+    "epwalsh/obsidian.nvim",
+    version = "*", -- recommended, use latest release instead of latest commit
+    lazy = false,
+    ft = "markdown",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "hrsh7th/nvim-cmp",
+      "nvim-treesitter",
+    },
+    opts = {
+      workspaces = {
+        {
+          name = "Projects",
+          path = "~/Documents/notes/1. Projects/",
+        },
+        {
+          name = "Areas",
+          path = "~/Documents/notes/2. Areas/",
+        },
+        {
+          name = "Resources",
+          path = "~/Documents/notes/3. Resources/",
+        },
+        {
+          name = "Archives",
+          path = "~/Documents/notes/4. Archives/",
+        },
+      },
+      completion = {
+        nvim_cmp = true,
+        min_chars = 2,
+      },
+    },
+  },
 }
