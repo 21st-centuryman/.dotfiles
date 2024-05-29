@@ -6,7 +6,7 @@
 [![Alacritty](https://img.shields.io/badge/Alacritty-F46D01.svg?style=for-the-badge&logoColor=white&logo=alacritty)](https://alacritty.org/)
 [![Git](https://img.shields.io/badge/git-F05032.svg?style=for-the-badge&logoColor=white&logo=git)](https://git-scm.com/)
 [![Homebrew](https://img.shields.io/badge/Homebrew-white.svg?style=for-the-badge&logoColor=FBB040&logo=homebrew)](https://brew.sh/)
-[![LazyVim](https://img.shields.io/badge/LazyVim-2E7DE9.svg?style=for-the-badge&logoColor=white&logo=lazyvim)](https://neovim.io/)
+[![LazyVim](https://img.shields.io/badge/LazyVim-2E7DE9.svg?style=for-the-badge&logoColor=white&logo=lazyvim)](http://www.lazyvim.org/)
 [![Starship](https://img.shields.io/badge/Starship-DD0B78.svg?style=for-the-badge&logoColor=white&logo=starship)](https://starship.rs/)
 [![Stow](https://img.shields.io/badge/GNU_Stow-white.svg?style=for-the-badge&logoColor=black&logo=gnu)](https://www.gnu.org/software/stow/)
 [![Tmux](https://img.shields.io/badge/tmux-1BB91F.svg?style=for-the-badge&logoColor=white&logo=tmux)](https://github.com/tmux/tmux)
