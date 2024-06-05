@@ -19,7 +19,8 @@ $line_break\
 $character
 """
 
-palette = 'catppuccin_mocha'
+palette = 'catppuccin_latte'
+#palette = 'catppuccin_mocha'
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
@@ -49,19 +50,47 @@ base = "#1e1e2e"
 mantle = "#181825"
 crust = "#11111b"
 
+[palettes.catppuccin_latte]
+rosewater = "#dc8a78"
+flamingo = "#dd7878"
+pink = "#ea76cb"
+mauve = "#8839ef"
+red = "#d20f39"
+maroon = "#e64553"
+peach = "#fe640b"
+yellow = "#df8e1d"
+green = "#40a02b"
+teal = "#179299"
+sky = "#04a5e5"
+sapphire = "#209fb5"
+blue = "#1e66f5"
+lavender = "#7287fd"
+text = "#4c4f69"
+subtext1 = "#5c5f77"
+subtext0 = "#6c6f85"
+overlay2 = "#7c7f93"
+overlay1 = "#8c8fa1"
+overlay0 = "#9ca0b0"
+surface2 = "#acb0be"
+surface1 = "#bcc0cc"
+surface0 = "#ccd0da"
+base = "#eff1f5"
+mantle = "#e6e9ef"
+crust = "#dce0e8"
+
 [character]
 format = '$symbol '
 
 [directory]
 style = "fg:sky"
-format = "[ $path ]($style)"
+format = "[$path ]($style) "
 truncation_length = 3
 truncation_symbol = "…/"
 
 [c]
 symbol = ""
 style = 'fg:sky'
-format = '[ $symbol]($style)[ $version ](fg:white)'
+format = '[$symbol]($style)[ $version ](fg:white) '
 
 [cmd_duration]
 min_time = 1000
@@ -71,7 +100,7 @@ format = '[[ $duration]($style)]($style)'
 [docker_context]
 symbol = " "
 style = 'fg:blue'
-format = '[$symbol]($style)[ $version ](fg:white)'
+format = '[$symbol]($style)[ $version ](fg:white) '
 
 [fill]
 symbol='━'
@@ -79,47 +108,47 @@ symbol='━'
 [git_branch]
 symbol = ""
 style = 'fg:red'
-format = '[ $symbol $branch]($style)'
+format = '[$symbol $branch]($style) '
 
 [git_status]
 style = 'fg:red'
-format = '[ $all_status$ahead_behind ]($style)'
+format = '[$all_status$ahead_behind ]($style)'
 
 [elixir]
 symbol = ""
 style = 'fg:mauve'
-format = '[$symbol]($style)[ $version ](fg:white)'
+format = '[$symbol]($style)[ $version ](fg:white) '
 
 [golang]
 symbol = ""
 style = 'fg:blue'
-format = '[$symbol]($style)[ $version ](fg:white)'
+format = '[$symbol]($style)[ $version ](fg:white) '
 
 [hostname]
 ssh_only = false
 style = 'fg:text'
-format = '[$hostname]($style)'
+format = '[$hostname]($style) '
 disabled = false
 
 [haskell]
 symbol = ""
 style = 'fg:mauve'
-format = '[$symbol]($style)[ $version ](fg:white)'
+format = '[$symbol]($style)[ $version ](fg:white) '
 
 [java]
 symbol = ""
 style = 'fg:peach'
-format = '[$symbol]($style)[ $version ](fg:white)'
+format = '[$symbol]($style)[ $version ](fg:white) '
 
 [julia]
 symbol = ""
 style = 'fg:lavender'
-format = '[$symbol]($style)[ $version ](fg:white)'
+format = '[$symbol]($style)[ $version ](fg:white) '
 
 [nodejs]
 symbol = "󰎙"
 style = 'fg:green'
-format = '[$symbol]($style)[ $version ](fg:white)'
+format = '[$symbol]($style)[ $version ](fg:white) '
 
 [os]
 disabled = false
@@ -129,7 +158,7 @@ format = '[[$symbol]($style)]($style)'
 [rust]
 symbol = ""
 style = 'fg:peach'
-format = '[$symbol]($style)[ $version ](fg:white)'
+format = '[$symbol]($style)[ $version ](fg:white) '
 
 [os.symbols]
 Alpine = " "
