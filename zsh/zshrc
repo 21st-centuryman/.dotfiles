@@ -55,25 +55,46 @@ source ~/.config/zsh/zsh-history-substring-search/zsh-history-substring-search.z
 
 
 lightmode() {
-  cp ~/.config/spotify-tui/latte.yml ~/.config/spotify-tui/config.yml # spotify-tui
+  # Alacritty
   gsed -i '/#"~\/.config\/alacritty\/catppuccin-latte.toml"/c\"~\/.config\/alacritty\/catppuccin-latte.toml"' ~/.config/alacritty/alacritty.toml
   gsed -i '/"~\/.config\/alacritty\/catppuccin-mocha.toml"/c\#"~\/.config\/alacritty\/catppuccin-mocha.toml"' ~/.config/alacritty/alacritty.toml
 
+  # Starship prompt
   gsed -i "/#palette = 'catppuccin_latte'/c\palette = 'catppuccin_latte'" ~/.config/starship/starship.toml
   gsed -i "/palette = 'catppuccin_mocha'/c\#palette = 'catppuccin_mocha'" ~/.config/starship/starship.toml
 
+  # Spotify Tui
+  cp ~/.config/spotify-tui/latte.yml ~/.config/spotify-tui/config.yml
+
+  # bat 
+  cp ~/.config/bat/latte ~/.config/bat/config
+  
+  # bottom
+  cp ~/.config/bottom/latte.toml ~/.config/bottom/bottom.toml
+  
   #sed -iv  "s/#source ~\/.config\/zsh\/catppuccin_latte-zsh-syntax-highlighting.zsh/source ~\/.config\/zsh\/catppuccin_latte-zsh-syntax-highlighting.zsh/" ~/.config/zsh/colors.zsh
   #sed -iv  "s/source ~\/.config\/zsh\/catppuccin_mocha-zsh-syntax-highlighting.zsh/#source ~\/.config\/zsh\/catppuccin_mocha-zsh-syntax-highlighting.zsh/" ~/.config/zsh/colors.zsh
 }
 
 darkmode() {
-  cp ~/.config/spotify-tui/mocha.yml ~/.config/spotify-tui/config.yml # spotify-tui
+  # Alacritty
   gsed -i '/"~\/.config\/alacritty\/catppuccin-latte.toml"/c\#"~\/.config\/alacritty\/catppuccin-latte.toml"' ~/.config/alacritty/alacritty.toml
   gsed -i '/#"~\/.config\/alacritty\/catppuccin-mocha.toml"/c\"~\/.config\/alacritty\/catppuccin-mocha.toml"' ~/.config/alacritty/alacritty.toml
 
+  # Starship prompt
   gsed -i "/palette = 'catppuccin_latte'/c\#palette = 'catppuccin_latte'" ~/.config/starship/starship.toml
   gsed -i "/#palette = 'catppuccin_mocha'/c\palette = 'catppuccin_mocha'" ~/.config/starship/starship.toml
 
+  # Spotify Tui
+  cp ~/.config/spotify-tui/mocha.yml ~/.config/spotify-tui/config.yml
+
+  # Bat 
+  cp ~/.config/bat/mocha ~/.config/bat/config
+
+  
+  # bottom
+  cp ~/.config/bottom/mocha.toml ~/.config/bottom/bottom.toml
+ 
   #sed -iv  "s/source ~\/.config\/zsh\/catppuccin_latte-zsh-syntax-highlighting.zsh/#source ~\/.config\/zsh\/catppuccin_latte-zsh-syntax-highlighting.zsh/" ~/.config/zsh/colors.zsh
   #sed -iv  "s/#source ~\/.config\/zsh\/catppuccin_mocha-zsh-syntax-highlighting.zsh/source ~\/.config\/zsh\/catppuccin_mocha-zsh-syntax-highlighting.zsh/" ~/.config/zsh/colors.zsh
 }
