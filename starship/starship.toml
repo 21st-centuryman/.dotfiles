@@ -19,8 +19,8 @@ $line_break\
 $character
 """
 
-palette = 'catppuccin_latte'
-#palette = 'catppuccin_mocha'
+#palette = 'catppuccin_latte'
+palette = 'catppuccin_mocha'
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
