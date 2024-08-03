@@ -26,6 +26,9 @@ alias ds_store="sudo find /* -name ".DS_Store" -delete"
 alias grep='rg'
 alias cat='bat'
 alias speedtest='speedtest-rs'
+alias cleans='find ~/Documents/Projects -name 'Cargo.toml' -execdir cargo clean \;'
+
+alias brainrot='viu ~/.config/brainrot.gif'
 
 # NEOVIM
 alias vi="nvim"
@@ -98,3 +101,9 @@ darkmode() {
   #sed -iv  "s/source ~\/.config\/zsh\/catppuccin_latte-zsh-syntax-highlighting.zsh/#source ~\/.config\/zsh\/catppuccin_latte-zsh-syntax-highlighting.zsh/" ~/.config/zsh/colors.zsh
   #sed -iv  "s/#source ~\/.config\/zsh\/catppuccin_mocha-zsh-syntax-highlighting.zsh/source ~\/.config\/zsh\/catppuccin_mocha-zsh-syntax-highlighting.zsh/" ~/.config/zsh/colors.zsh
 }
+
+alias op='source /Users/cab/Documents/Projects/test/openpilot/tools/op.sh "$@"'
+
+. "/Users/cab/.config/cargo/env"
+
+alias op='source /Users/cab/Documents/Projects/test/openpilot/tools/op.sh "$@"'

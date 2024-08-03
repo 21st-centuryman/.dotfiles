@@ -80,6 +80,8 @@ crust = "#dce0e8"
 
 [character]
 format = '$symbol '
+success_symbol = '[\$](bold green)'
+error_symbol = '[\$](bold red)'
 
 [directory]
 style = "fg:sky"
@@ -91,6 +93,12 @@ truncation_symbol = "…/"
 symbol = ""
 style = 'fg:sky'
 format = '[$symbol]($style)[ $version ](fg:white) '
+
+[cmake]
+symbol = ""
+style = 'fg:sky'
+format = '[$symbol]($style)[ $version ](fg:white) '
+
 
 [cmd_duration]
 min_time = 1000
