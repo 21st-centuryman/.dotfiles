@@ -1,5 +1,3 @@
-# Startup
-echo "" && pfetch
 
 # History in cache directory
 HISTSIZE=100000
@@ -27,6 +25,7 @@ alias grep='rg'
 alias cat='bat'
 alias speedtest='speedtest-rs'
 alias cleans='find ~/Documents/Projects -name 'Cargo.toml' -execdir cargo clean \;'
+alias fzf='sk'
 
 alias brainrot='viu ~/.config/brainrot.gif'
 
@@ -55,6 +54,17 @@ eval "$(starship init zsh)"
 source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.config/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 
+riscy32() {
+  local name=$1
+  verilator --timescale 10ns/1ns --assert --trace --binary -j 0 "cores/riscy32_single/tests/${1}_tb.sv" "cores/riscy32_single/src/${1}.sv"
+  ./obj_dir/V${1}_tb
+}
+
+riscy32_clk() {
+  local name=$1
+  verilator --clk clk --timescale 10ns/1ns --assert --trace --binary -j 0 "cores/riscy32_single/tests/${1}_tb.sv" "cores/riscy32_single/src/${1}.sv"
+  ./obj_dir/V${1}_tb
+}
 
 
 lightmode() {
@@ -102,8 +112,36 @@ darkmode() {
   #sed -iv  "s/#source ~\/.config\/zsh\/catppuccin_mocha-zsh-syntax-highlighting.zsh/source ~\/.config\/zsh\/catppuccin_mocha-zsh-syntax-highlighting.zsh/" ~/.config/zsh/colors.zsh
 }
 
+
+pfetcher() {
+  case $(( $EPOCHSECONDS % 4 + 1 )) in
+    1)
+      gsed -i 's/PF_ASCII="[^"]*"/PF_ASCII="rust"/' $PF_SOURCE
+      gsed -i 's/PF_COL1=[0-9]*/PF_COL1=9/' $PF_SOURCE
+      ;;
+    2)
+      gsed -i 's/PF_ASCII="[^"]*"/PF_ASCII="openbsd"/' $PF_SOURCE
+      gsed -i 's/PF_COL1=[0-9]*/PF_COL1=3/' $PF_SOURCE
+      ;;
+    3)
+      gsed -i 's/PF_ASCII="[^"]*"/PF_ASCII="macos"/' $PF_SOURCE
+      gsed -i 's/PF_COL1=[0-9]*/PF_COL1=5/' $PF_SOURCE
+      ;;
+    4)
+      gsed -i 's/PF_ASCII="[^"]*"/PF_ASCII="artix"/' $PF_SOURCE
+      gsed -i 's/PF_COL1=[0-9]*/PF_COL1=4/' $PF_SOURCE
+      ;;
+esac
+pfetch
+}
+
 alias op='source /Users/cab/Documents/Projects/test/openpilot/tools/op.sh "$@"'
 
 . "/Users/cab/.config/cargo/env"
 
 alias op='source /Users/cab/Documents/Projects/test/openpilot/tools/op.sh "$@"'
+
+# Startup
+export PF_SOURCE=~/.config/pfetch/pfetch.conf
+echo "" && pfetcher
+
