@@ -1,3 +1,66 @@
+local colors = {
+  trans = nil,
+  rosewater = "#f5e0dc",
+  flamingo = "#f2cdcd",
+  pink = "#f5c2e7",
+  mauve = "#cba6f7",
+  red = "#f38ba8",
+  maroon = "#eba0ac",
+  peach = "#fab387",
+  yellow = "#f9e2af",
+  green = "#a6e3a1",
+  teal = "#94e2d5",
+  sky = "#89dceb",
+  sapphire = "#74c7ec",
+  blue = "#89b4fa",
+  lavender = "#b4befe",
+  text = "#cdd6f4",
+  subtext1 = "#bac2de",
+  subtext0 = "#a6adc8",
+  overlay2 = "#9399b2",
+  overlay1 = "#7f849c",
+  overlay0 = "#6c7086",
+  surface2 = "#585b70",
+  surface1 = "#45475a",
+  surface0 = "#313244",
+  base = "#1e1e2e",
+  mantle = "#181825",
+  crust = "#11111b",
+}
+
+local theme = {
+  inactive = {
+    a = { fg = colors.crust, bg = colors.trans, gui = "bold" },
+    b = { fg = colors.red, bg = colors.trans },
+    c = { fg = colors.overlay1, bg = colors.trans },
+  },
+  visual = {
+    a = { fg = colors.crust, bg = colors.peach, gui = "bold" },
+    b = { fg = colors.red, bg = colors.trans },
+    c = { fg = colors.overlay1, bg = colors.trans },
+  },
+  replace = {
+    a = { fg = colors.crust, bg = colors.red, gui = "bold" },
+    b = { fg = colors.red, bg = colors.trans },
+    c = { fg = colors.overlay1, bg = colors.trans },
+  },
+  normal = {
+    a = { fg = colors.crust, bg = colors.sky, gui = "bold" },
+    b = { fg = colors.red, bg = colors.trans },
+    c = { fg = colors.overlay1, bg = colors.trans },
+  },
+  insert = {
+    a = { fg = colors.crust, bg = colors.green, gui = "bold" },
+    b = { fg = colors.red, bg = colors.trans },
+    c = { fg = colors.overlay1, bg = colors.bg },
+  },
+  command = {
+    a = { fg = colors.crust, bg = colors.yellow, gui = "bold" },
+    b = { fg = colors.red, bg = colors.trans },
+    c = { fg = colors.overlay1, bg = colors.trans },
+  },
+}
+
 return {
   "nvim-lualine/lualine.nvim",
   event = "VeryLazy",
@@ -15,21 +78,30 @@ return {
     -- PERF: we don't need this lualine require madness 🤷
     local lualine_require = require("lualine_require")
     lualine_require.require = require
-
     local icons = LazyVim.config.icons
-
     vim.o.laststatus = vim.g.lualine_laststatus
 
     local opts = {
       options = {
-        theme = "catppuccin",
+        theme = theme,
         globalstatus = vim.o.laststatus == 3,
+        component_separators = { left = "", right = "" },
+        section_separators = { left = "", right = "" },
         disabled_filetypes = { statusline = { "dashboard", "alpha", "ministarter" } },
       },
       sections = {
         lualine_a = { "mode" },
-        lualine_b = { "branch" },
-
+        lualine_b = {
+          {
+            function()
+              return vim.g.remote_neovim_host and ("Remote: %s"):format(vim.uv.os_gethostname()) or ""
+            end,
+          },
+          {
+            "branch",
+            padding = { right = 1, left = 2 },
+          },
+        },
         lualine_c = {
           LazyVim.lualine.root_dir(),
           {
@@ -89,10 +161,10 @@ return {
           },
         },
         lualine_y = {
-          { "progress", separator = " ", padding = { left = 1, right = 1 } },
+          { "progress", padding = { left = 1, right = 1 } },
         },
         lualine_z = {
-          { "location", padding = { left = 0, right = 1 } },
+          { "location", padding = { left = 1, right = 1 } },
         },
       },
       extensions = { "neo-tree", "lazy" },

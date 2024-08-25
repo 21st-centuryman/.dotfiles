@@ -66,7 +66,4 @@ return {
       },
     },
   },
-  {
-    "RaafatTurki/hex.nvim",
-  },
 }
