@@ -84,6 +84,9 @@ lightmode() {
   
   # bottom
   cp ~/.config/bottom/latte.toml ~/.config/bottom/bottom.toml
+
+  # sioyek
+  cp ~/.config/sioyek/lightmode.config ~/.config/sioyek/prefs_user.config
   
   #sed -iv  "s/#source ~\/.config\/zsh\/catppuccin_latte-zsh-syntax-highlighting.zsh/source ~\/.config\/zsh\/catppuccin_latte-zsh-syntax-highlighting.zsh/" ~/.config/zsh/colors.zsh
   #sed -iv  "s/source ~\/.config\/zsh\/catppuccin_mocha-zsh-syntax-highlighting.zsh/#source ~\/.config\/zsh\/catppuccin_mocha-zsh-syntax-highlighting.zsh/" ~/.config/zsh/colors.zsh
@@ -107,11 +110,13 @@ darkmode() {
   
   # bottom
   cp ~/.config/bottom/mocha.toml ~/.config/bottom/bottom.toml
- 
+
+  # sioyek
+  cp ~/.config/sioyek/darkmode.config ~/.config/sioyek/prefs_user.config
+
   #sed -iv  "s/source ~\/.config\/zsh\/catppuccin_latte-zsh-syntax-highlighting.zsh/#source ~\/.config\/zsh\/catppuccin_latte-zsh-syntax-highlighting.zsh/" ~/.config/zsh/colors.zsh
   #sed -iv  "s/#source ~\/.config\/zsh\/catppuccin_mocha-zsh-syntax-highlighting.zsh/source ~\/.config\/zsh\/catppuccin_mocha-zsh-syntax-highlighting.zsh/" ~/.config/zsh/colors.zsh
 }
-
 
 pfetcher() {
   case $(( $EPOCHSECONDS % 4 + 1 )) in
